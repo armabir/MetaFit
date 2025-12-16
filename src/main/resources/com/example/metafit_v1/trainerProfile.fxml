@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="960.0" prefWidth="1860.0" style="-fx-background-color: ECECEC;" stylesheets="@trainer/styleDashboard.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.metafit_v1.trainer_controllers.TrainerProfileController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#85cc17" height="960.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="boarder" width="120.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="80.0" layoutY="265.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="120.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7838477492332458" green="1.0" blue="0.4104938209056854" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5215686559677124" green="0.800000011920929" blue="0.09019608050584793" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true">
+         <clip>
+            <Circle centerX="50" centerY="50" radius="50" />
+         </clip>
+         <image>
+            <Image url="@icons/logo.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="38.0" layoutY="282.0" pickOnBounds="true">
+         <image>
+            <Image url="@icons/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="37.0" layoutY="362.0" onMouseClicked="#gotoDashboard" pickOnBounds="true">
+         <image>
+            <Image url="@icons/layout.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="38.0" layoutY="886.0" pickOnBounds="true">
+         <image>
+            <Image url="@icons/logout.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="520.0" layoutX="769.0" layoutY="308.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="360.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#2f3c33" height="250.0" layoutX="769.0" layoutY="43.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="360.0" />
+      <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="884.0" layoutY="89.0" pickOnBounds="true">
+         <clip>
+            <Circle centerX="65" centerY="65" radius="65" />
+         </clip>
+         <image>
+            <Image url="@images/TrainerDP.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="userNameLabel" layoutX="905.0" layoutY="225.0" text="\@armabir" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="792.0" layoutY="362.0" prefHeight="45.0" prefWidth="314.0" stylesheets="@styleUserProfile.css" text="ARM Abir Hasan">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Label layoutX="800.0" layoutY="326.0" text="Name">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField layoutX="792.0" layoutY="485.0" prefHeight="45.0" prefWidth="314.0" stylesheets="@styleUserProfile.css" text="armabir1@gmail.com">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Label layoutX="800.0" layoutY="450.0" text="Email">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField layoutX="792.0" layoutY="617.0" prefHeight="45.0" prefWidth="314.0" stylesheets="@styleUserProfile.css" text="Current Passord">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Label layoutX="800.0" layoutY="582.0" text="Password">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField layoutX="792.0" layoutY="675.0" prefHeight="45.0" prefWidth="314.0" stylesheets="@styleUserProfile.css" text="New Password">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Button layoutX="905.0" layoutY="735.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #85cc17;" text="Change Password" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="1088.0" layoutY="249.0" pickOnBounds="true">
+         <image>
+            <Image url="@icons/edit.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="830.0" layoutY="869.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #85cc17;" text="Save Changes" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

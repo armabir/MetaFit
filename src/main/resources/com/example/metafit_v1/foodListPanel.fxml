@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="380.0" stylesheets="@mealEntryStyle.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.metafit_v1.other_controllers.FoodListPanelController">
+   <children>
+      <Pane layoutX="8.0" layoutY="5.0" prefHeight="50.0" prefWidth="365.0" styleClass="glass-dark" stylesheets="@glass_effect.css">
+         <children>
+            <Label fx:id="nameLabel" layoutX="18.0" layoutY="10.0" text="Chicken" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="335.0" layoutY="7.0" text="g" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="weightField" layoutX="277.0" layoutY="3.0" prefHeight="35.0" prefWidth="50.0" styleClass="glass-textfield-accent" stylesheets="@glass_textfield_choicebox.css" text="450">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+   </children>
+</Pane>

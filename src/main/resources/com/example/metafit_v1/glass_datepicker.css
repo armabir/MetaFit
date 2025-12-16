@@ -1,0 +1,134 @@
+/* Glass Effect DatePicker */
+
+/* Main DatePicker field */
+.glass-datepicker {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-border-color: rgba(255, 255, 255, 0.2);
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+    -fx-padding: 10;
+}
+
+/* DatePicker on hover */
+.glass-datepicker:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* DatePicker when focused */
+.glass-datepicker:focused {
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+    -fx-border-color: rgba(132, 204, 22, 0.5);
+    -fx-border-width: 2;
+}
+
+/* DatePicker arrow button */
+.glass-datepicker .arrow-button {
+    -fx-background-color: rgba(132, 204, 22, 0.2);
+    -fx-border-color: rgba(132, 204, 22, 0.3);
+    -fx-border-width: 1;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 5;
+}
+
+.glass-datepicker .arrow-button:hover {
+    -fx-background-color: rgba(132, 204, 22, 0.4);
+    -fx-border-color: rgba(132, 204, 22, 0.6);
+}
+
+.glass-datepicker .arrow-button:pressed {
+    -fx-background-color: rgba(132, 204, 22, 0.6);
+}
+
+/* Calendar popup */
+.glass-datepicker .date-picker-popup {
+    -fx-background-color: rgba(15, 23, 42, 0.95);
+    -fx-border-color: rgba(255, 255, 255, 0.2);
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+}
+
+/* Calendar header */
+.glass-datepicker .date-picker-popup .calendar-header {
+    -fx-background-color: rgba(132, 204, 22, 0.2);
+    -fx-border-color: rgba(132, 204, 22, 0.3);
+    -fx-text-fill: white;
+}
+
+/* Calendar day cells */
+.glass-datepicker .date-picker-popup .day-cell {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-text-fill: rgba(255, 255, 255, 0.8);
+    -fx-font-size: 12;
+}
+
+/* Day cell on hover */
+.glass-datepicker .date-picker-popup .day-cell:hover {
+    -fx-background-color: rgba(132, 204, 22, 0.3);
+    -fx-border-color: rgba(132, 204, 22, 0.5);
+    -fx-text-fill: white;
+}
+
+/* Selected day cell */
+.glass-datepicker .date-picker-popup .day-cell:selected {
+    -fx-background-color: linear-gradient(to bottom, #84cc16, #65a30d);
+    -fx-border-color: #84cc16;
+    -fx-text-fill: #0f172a;
+    -fx-font-weight: bold;
+}
+
+/* Today's date cell */
+.glass-datepicker .date-picker-popup .day-cell:today {
+    -fx-border-color: rgba(132, 204, 22, 0.6);
+    -fx-border-width: 2;
+}
+
+/* Disabled date cells */
+.glass-datepicker .date-picker-popup .day-cell:disabled {
+    -fx-text-fill: rgba(255, 255, 255, 0.3);
+    -fx-background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Compact Glass DatePicker (smaller) */
+.glass-datepicker-small {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-border-color: rgba(255, 255, 255, 0.15);
+    -fx-border-width: 1;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-text-fill: white;
+    -fx-font-size: 12;
+    -fx-padding: 8;
+}
+
+.glass-datepicker-small:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+    -fx-border-color: rgba(255, 255, 255, 0.25);
+}
+
+.glass-datepicker-small:focused {
+    -fx-border-color: rgba(132, 204, 22, 0.5);
+    -fx-border-width: 1.5;
+}
+
+/* Large Glass DatePicker */
+.glass-datepicker-large {
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+    -fx-border-color: rgba(255, 255, 255, 0.25);
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-font-size: 16;
+    -fx-padding: 12;
+}
+
+.glass-datepicker-large:focused {
+    -fx-border-color: #84cc16;
+}

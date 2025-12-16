@@ -1,0 +1,19 @@
+.list-view {
+    -fx-background-color: transparent;   /* Transparent background */
+    -fx-control-inner-background: transparent;
+    -fx-border-color: transparent;
+}
+
+.list-cell1 {
+    -fx-background-color: transparent;   /* Transparent background for each cell */
+    -fx-text-fill: white;                /* White text */
+    -fx-font-weight: bold;               /* Bold text */
+    -fx-font-size: 14px;
+    /*-fx-alignment: center; !* Font size 15 *!*/
+}
+
+.list-cell:filled:selected,
+.list-cell:filled:selected:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2); /* Light transparent highlight on selection */
+    -fx-text-fill: white;
+}

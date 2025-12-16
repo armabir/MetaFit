@@ -1,0 +1,36 @@
+.text-field {
+    -fx-background-color: #2f3c33;   /* Background color */
+    -fx-text-fill: white;            /* Text color */
+    -fx-prompt-text-fill: #bbbbbb;   /* Optional: placeholder text color */
+    -fx-background-radius: 8;        /* Rounded corners */
+    -fx-border-radius: 8;
+    -fx-border-color: transparent;   /* No border */
+    -fx-padding: 6;
+}
+.date-picker {
+    -fx-background-color: #2f3c33;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: transparent;
+}
+
+.date-picker > .text-field {
+    -fx-background-color: transparent;   /* Use parent background */
+    -fx-text-fill: white;                /* Input text color */
+    -fx-prompt-text-fill: #bbbbbb;       /* Placeholder color */
+    -fx-font-size: 13px;
+}
+
+.date-picker > .arrow-button {
+    -fx-background-color: #445047;
+    -fx-background-radius: 0 8 8 0;
+}
+
+.date-picker > .arrow-button:hover {
+    -fx-background-color: #556358;
+}
+
+.date-picker > .arrow-button > .arrow {
+    -fx-background-color: white;  /* Calendar arrow color */
+}

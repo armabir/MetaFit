@@ -1,0 +1,48 @@
+/* Make the entire chart transparent */
+.chart {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+/* Transparent chart background */
+.chart-plot-background {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+/* Transparent chart content background */
+.chart-content {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+/* Optional: Make axis transparent */
+.axis {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+/* Optional: Make axis lines transparent or visible */
+.axis-tick-mark {
+    -fx-stroke: #cccccc;
+    -fx-text-fill: white;
+}
+
+.axis-minor-tick-mark {
+    -fx-stroke: #e0e0e0;
+    -fx-text-fill: white;
+}
+
+/* Optional: Style the legend */
+.chart-legend {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-border-color: #cccccc;
+    -fx-text-fill: white;
+}
+
+/* Optional: Transparent legend */
+.chart-legend {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}

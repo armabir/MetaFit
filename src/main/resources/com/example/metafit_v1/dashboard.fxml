@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="960.0" prefWidth="1860.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #0f172a 0%, #1e293b 50%, #0f172a 100%);" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.metafit_v1.user_controllers.DashboardController">
+   <children>
+      <Pane layoutX="1465.0" layoutY="357.0" prefHeight="300.0" prefWidth="380.0" styleClass="glass-card">
+         <children>
+            <Pane layoutX="31.0" layoutY="56.0" prefHeight="210.0" prefWidth="120.0" styleClass="glass-dark">
+               <children>
+                  <Pane fx:id="calorieRectangle" layoutY="210.0" prefHeight="110.0" prefWidth="120.0" styleClass="glass-pink">
+                     <children>
+                        <Label fx:id="caloriLabel" alignment="CENTER" layoutX="23.0" layoutY="55.0" text="0000.00" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalCaloriLabel" alignment="CENTER" layoutX="25.0" layoutY="77.0" text="0000000" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="849.0" layoutY="14.0" prefHeight="330.0" prefWidth="1000.0" styleClass="glass-frosted">
+         <children>
+            <Pane prefHeight="80.0" prefWidth="1000.0" styleClass="glass-dark" />
+            <Pane layoutX="20.0" layoutY="102.0" prefHeight="210.0" prefWidth="140.0" styleClass="glass-dark">
+               <children>
+                  <Pane fx:id="proteinRectangle" layoutY="210.0" prefHeight="80.0" prefWidth="140.0" styleClass="glass-lime">
+                     <children>
+                        <Label fx:id="proteinAmountLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="23.0" text="0000000000000" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="44.0" layoutY="4.0" text="Protein" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="187.0" layoutY="101.0" prefHeight="210.0" prefWidth="140.0" styleClass="glass-dark">
+               <children>
+                  <Pane fx:id="carbsRectangle" layoutY="210.0" prefHeight="80.0" prefWidth="140.0" styleClass="glass-cyan">
+                     <children>
+                        <Label fx:id="carbsAmountLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="23.0" text="0000000000000" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="50.0" layoutY="5.0" text="Carbs" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="350.0" layoutY="101.0" prefHeight="210.0" prefWidth="140.0" styleClass="glass-dark">
+               <children>
+                  <Pane fx:id="fatRectangle" layoutY="210.0" prefHeight="80.0" prefWidth="140.0" styleClass="glass-red">
+                     <children>
+                        <Label fx:id="fatAmountLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="23.0" text="0000000000000" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="57.0" layoutY="5.0" text="Fat" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="514.0" layoutY="101.0" prefHeight="210.0" prefWidth="140.0" styleClass="glass-dark">
+               <children>
+                  <Pane fx:id="fiberRectangle" layoutY="210.0" prefHeight="80.0" prefWidth="140.0" styleClass="glass-orange">
+                     <children>
+                        <Label fx:id="fiberAmountLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="23.0" text="0000000000000" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="51.0" layoutY="5.0" text="Fiber" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="678.0" layoutY="100.0" prefHeight="210.0" prefWidth="140.0" styleClass="glass-dark">
+               <children>
+                  <Pane fx:id="sugarRectangle" layoutY="210.0" prefHeight="80.0" prefWidth="140.0" styleClass="glass-yellow">
+                     <children>
+                        <Label fx:id="sugarAmountLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="23.0" text="0000000000000" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="46.0" layoutY="5.0" text="Sugar" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="843.0" layoutY="101.0" prefHeight="210.0" prefWidth="140.0" styleClass="glass-dark">
+               <children>
+                  <Pane fx:id="waterRectangle" layoutY="210.0" prefHeight="80.0" prefWidth="140.0" styleClass="glass-sky">
+                     <children>
+                        <Label fx:id="waterAmountLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="38.0" layoutY="23.0" text="0000000000000" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="46.0" layoutY="5.0" text="Water" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="484.0" layoutY="88.0" prefHeight="300.0" prefWidth="350.0" styleClass="glass-card">
+         <children>
+            <Label fx:id="eatLabel" layoutX="244.0" layoutY="13.0" text="200 Cal" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="tefLabel" layoutX="244.0" layoutY="48.0" text="500 Cal" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="neatLabel" layoutX="244.0" layoutY="91.0" text="700 Cal" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="bmrLabel" layoutX="233.0" layoutY="188.0" text="2000 Cal" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="134.0" layoutY="88.0" prefHeight="300.0" prefWidth="350.0" styleClass="glass-dark">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="19.0" layoutY="20.0" pickOnBounds="true">
+               <clip>
+                  <Circle centerX="50" centerY="50" radius="50" />
+               </clip>
+               <image>
+                  <Image url="@images/DP.jpeg" />
+               </image>
+            </ImageView>
+            <Label fx:id="nameLabel" layoutX="135.0" layoutY="33.0" text="ARM Abir" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="userNameLabel" layoutX="135.0" layoutY="68.0" text="\@armabir" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="targetLabel" layoutX="27.0" layoutY="163.0" text="Weight Loss" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="137.0" text="Target:" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="159.0" layoutY="241.0" pickOnBounds="true">
+               <image>
+                  <Image url="@icons/height.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="38.0" layoutY="241.0" pickOnBounds="true">
+               <image>
+                  <Image url="@icons/scales.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="273.0" layoutY="241.0" pickOnBounds="true">
+               <image>
+                  <Image url="@icons/bmi.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="weightLabel" layoutX="25.0" layoutY="205.0" text="80 Kgs" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="heightLabel" layoutX="161.0" layoutY="207.0" text="5' 9&quot;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="tdeeLabel" layoutX="251.0" layoutY="205.0" text="2300 Cal" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="848.0" layoutY="671.0" prefHeight="270.0" prefWidth="1000.0" styleClass="glass-card">
+         <children>
+            <Pane layoutX="14.0" layoutY="15.0" prefHeight="240.0" prefWidth="220.0" styleClass="glass-accent">
+               <children>
+                  <ListView fx:id="foodList1" layoutX="2.0" layoutY="30.0" prefHeight="220.0" prefWidth="131.0" styleClass="list-cell1" stylesheets="@mealEntryStyle.css" />
+                  <ListView fx:id="foodWeightList1" layoutX="139.0" layoutY="30.0" prefHeight="220.0" prefWidth="80.0" styleClass="list-cell1" stylesheets="@mealEntryStyle.css" />
+                  <Label layoutX="68.0" layoutY="3.0" text="Breakfast" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="265.0" layoutY="15.0" prefHeight="240.0" prefWidth="220.0" styleClass="glass-accent">
+               <children>
+                  <ListView fx:id="foodList2" layoutX="2.0" layoutY="30.0" prefHeight="220.0" prefWidth="131.0" styleClass="list-cell1" stylesheets="@mealEntryStyle.css" />
+                  <ListView fx:id="foodWeightList2" layoutX="139.0" layoutY="30.0" prefHeight="220.0" prefWidth="80.0" styleClass="list-cell1" stylesheets="@mealEntryStyle.css" />
+                  <Label layoutX="83.0" layoutY="3.0" text="Lunch" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="514.0" layoutY="15.0" prefHeight="240.0" prefWidth="220.0" styleClass="glass-accent">
+               <children>
+                  <ListView fx:id="foodList3" layoutX="2.0" layoutY="30.0" prefHeight="220.0" prefWidth="166.0" styleClass="list-cell1" stylesheets="@mealEntryStyle.css" />
+                  <ListView fx:id="foodWeightList3" layoutX="139.0" layoutY="30.0" prefHeight="220.0" prefWidth="80.0" styleClass="list-cell1" stylesheets="@mealEntryStyle.css" />
+                  <Label layoutX="78.0" layoutY="3.0" text="Dinner" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="766.0" layoutY="15.0" prefHeight="240.0" prefWidth="220.0" styleClass="glass-accent">
+               <children>
+                  <ListView fx:id="foodList4" layoutX="2.0" layoutY="30.0" prefHeight="220.0" prefWidth="166.0" styleClass="list-cell1" stylesheets="@mealEntryStyle.css" />
+                  <ListView fx:id="foodWeightList4" layoutX="139.0" layoutY="30.0" prefHeight="220.0" prefWidth="80.0" styleClass="list-cell1" stylesheets="@mealEntryStyle.css" />
+                  <Label layoutX="58.0" layoutY="3.0" text="Extra Meal" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="848.0" layoutY="357.0" prefHeight="300.0" prefWidth="600.0" styleClass="glass-card">
+         <children>
+            <LineChart fx:id="weightLineChart" layoutY="17.0" prefHeight="280.0" prefWidth="580.0" stylesheets="@lineChart.css">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+         </children>
+      </Pane>
+      <Pane prefHeight="960.0" prefWidth="120.0" styleClass="glass-accent" />
+      <Label fx:id="welcomeLabel" layoutX="149.0" layoutY="12.0" text="Welcome back, Abir!" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="149.0" layoutY="50.0" text="Ready to track your fitness with swag?" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="saturdayButton" layoutX="871.0" layoutY="38.0" mnemonicParsing="false" onAction="#satEvent" prefWidth="120.0" styleClass="glass-button-small-primary" stylesheets="@glass_button.css" text="Saturday" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="sundayButton" layoutX="1013.0" layoutY="38.0" mnemonicParsing="false" onAction="#sunEvent" prefWidth="120.0" styleClass="glass-button-small-primary" stylesheets="@glass_button.css" text="Sunday" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="tuesdayButton" layoutX="1296.0" layoutY="38.0" mnemonicParsing="false" onAction="#tuesEvent" prefWidth="120.0" styleClass="glass-button-small-primary" stylesheets="@glass_button.css" text="Tuesday" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="mondayButton" layoutX="1155.0" layoutY="38.0" mnemonicParsing="false" onAction="#monEvent" prefWidth="120.0" styleClass="glass-button-small-primary" stylesheets="@glass_button.css" text="Monday" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="wednessdayButton" layoutX="1438.0" layoutY="38.0" mnemonicParsing="false" onAction="#wedEvent" prefWidth="120.0" styleClass="glass-button-small-primary" stylesheets="@glass_button.css" text="Wednesday" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="thursdayButton" layoutX="1582.0" layoutY="38.0" mnemonicParsing="false" onAction="#thuEvent" prefWidth="120.0" styleClass="glass-button-small-primary" stylesheets="@glass_button.css" text="Thursday" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="fridayButton" layoutX="1727.0" layoutY="38.0" mnemonicParsing="false" onAction="#friEvent" prefWidth="100.0" styleClass="glass-button-small-primary" stylesheets="@glass_button.css" text="Friday" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="1654.0" layoutY="448.0" text="Protein" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="proteinWeightLabel" layoutX="1749.0" layoutY="448.0" text="150g" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1655.0" layoutY="490.0" text="Carbs" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="carbsWeightLabel" layoutX="1750.0" layoutY="490.0" text="150g" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1657.0" layoutY="536.0" text="Fat" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="fatWeightLabel" layoutX="1752.0" layoutY="536.0" text="150g" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1543.0" layoutY="364.0" text="Nutrition Summary" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="280.0" fitWidth="200.0" layoutX="518.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons/BMR.PNG" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#87cc1800" height="80.0" layoutY="345.0" stroke="#85cc17" strokeType="INSIDE" strokeWidth="3.0" width="120.0">
+         <effect>
+            <Glow level="0.5" />
+         </effect>
+      </Rectangle>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#gotoTrainer" pickOnBounds="true">
+         <clip>
+            <Circle centerX="50" centerY="50" radius="50" />
+         </clip>
+         <image>
+            <Image url="@icons/logo.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="38.0" layoutY="282.0" onMouseClicked="#gotoProfile" pickOnBounds="true" styleClass="image-button">
+         <image>
+            <Image url="@icons/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="37.0" layoutY="362.0" pickOnBounds="true" styleClass="image-button">
+         <image>
+            <Image url="@icons/layout.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="38.0" layoutY="442.0" onMouseClicked="#gotoAutomeal" pickOnBounds="true" styleClass="image-button">
+         <image>
+            <Image url="@icons/Ai.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="38.0" layoutY="522.0" onMouseClicked="#gotoMealEntry" pickOnBounds="true" styleClass="image-button">
+         <image>
+            <Image url="@icons/brunch.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="37.0" layoutY="602.0" onMouseClicked="#gotoWorkout" pickOnBounds="true" styleClass="image-button">
+         <image>
+            <Image url="@icons/gym.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="38.0" layoutY="886.0" pickOnBounds="true" styleClass="image-button">
+         <image>
+            <Image url="@icons/logout.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="134.0" layoutY="402.0" prefHeight="540.0" prefWidth="700.0" styleClass="glass-card" stylesheets="@glass_effect.css">
+         <children>
+            <Circle fill="#85cc17" layoutX="180.0" layoutY="140.0" opacity="0.5" radius="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Circle fill="#85cc17" layoutX="510.0" layoutY="140.0" opacity="0.5" radius="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <ImageView fitHeight="500.0" fitWidth="400.0" layoutX="31.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/anatomy_front.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="500.0" fitWidth="400.0" layoutX="365.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/anatomy_back.png" />
+               </image>
+            </ImageView>
+            <Line endX="-48.66668701171875" endY="-78.0" fill="WHITE" layoutX="350.0" layoutY="209.0" startX="-106.66668701171875" startY="-59.3333740234375" stroke="#9dff00" strokeLineCap="ROUND" strokeWidth="4.0">
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </Line>
+            <Pane layoutX="300.0" layoutY="101.0" prefHeight="35.0" prefWidth="95.0" styleClass="glass-dark">
+               <children>
+                  <Label layoutX="35.0" layoutY="6.0" text="Biceps" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Rectangle fx:id="bicepsStatus" arcHeight="5.0" arcWidth="5.0" fill="RED" height="15.0" layoutX="14.0" layoutY="10.0" stroke="WHITE" strokeType="INSIDE" width="15.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="602.0" layoutY="63.0" prefHeight="35.0" prefWidth="95.0" styleClass="glass-dark">
+               <children>
+                  <Label layoutX="35.0" layoutY="6.0" text="Triceps" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Rectangle fx:id="tricepsStatus" arcHeight="5.0" arcWidth="5.0" fill="#ff9600" height="15.0" layoutX="14.0" layoutY="10.0" stroke="WHITE" strokeType="INSIDE" width="15.0" />
+               </children>
+            </Pane>
+            <Line endX="-48.99993896484375" endY="-77.99996948242188" fill="WHITE" layoutX="658.0" layoutY="176.0" startX="-86.0" startY="-18.3333740234375" stroke="#9dff00" strokeLineCap="ROUND" strokeWidth="4.0">
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </Line>
+            <Line endX="-45.000030517578125" endY="-76.33334350585938" fill="WHITE" layoutX="304.0" layoutY="138.0" startX="-100.66668701171875" startY="-15.0" stroke="#9dff00" strokeLineCap="ROUND" strokeWidth="4.0">
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </Line>
+            <Pane layoutX="254.0" layoutY="30.0" prefHeight="35.0" prefWidth="95.0" styleClass="glass-dark">
+               <children>
+                  <Label layoutX="35.0" layoutY="6.0" text="Chest" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Rectangle fx:id="chestStatus" arcHeight="5.0" arcWidth="5.0" fill="#ff9600" height="15.0" layoutX="14.0" layoutY="10.0" stroke="WHITE" strokeType="INSIDE" width="15.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="4.0" layoutY="30.0" prefHeight="35.0" prefWidth="113.0" styleClass="glass-dark">
+               <children>
+                  <Label layoutX="35.0" layoutY="6.0" text="Shoulder" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Rectangle fx:id="shoulderStatus" arcHeight="5.0" arcWidth="5.0" fill="#ff9600" height="15.0" layoutX="14.0" layoutY="10.0" stroke="WHITE" strokeType="INSIDE" width="15.0" />
+               </children>
+            </Pane>
+            <Line endX="-203.66664123535156" endY="-82.99996948242188" fill="WHITE" layoutX="314.0" layoutY="148.0" startX="-180.0" startY="-43.666656494140625" stroke="#9dff00" strokeLineCap="ROUND" strokeWidth="4.0">
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </Line>
+            <Pane layoutX="362.0" layoutY="30.0" prefHeight="35.0" prefWidth="95.0" styleClass="glass-dark">
+               <children>
+                  <Label layoutX="35.0" layoutY="6.0" text="Traps" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Rectangle fx:id="trapsStatus" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="15.0" layoutX="14.0" layoutY="10.0" stroke="WHITE" strokeType="INSIDE" width="15.0" />
+               </children>
+            </Pane>
+            <Line endX="137.0" endY="-88.66665649414062" fill="WHITE" layoutX="314.0" layoutY="148.0" startX="190.0" startY="-14.3333740234375" stroke="#9dff00" strokeLineCap="ROUND" strokeWidth="4.0">
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </Line>
+            <Pane layoutX="350.0" layoutY="264.0" prefHeight="35.0" prefWidth="86.0" styleClass="glass-dark">
+               <children>
+                  <Label layoutX="35.0" layoutY="6.0" text="Lats" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Rectangle fx:id="latsStatus" arcHeight="5.0" arcWidth="5.0" fill="#ff9600" height="15.0" layoutX="14.0" layoutY="10.0" stroke="WHITE" strokeType="INSIDE" width="15.0" />
+               </children>
+            </Pane>
+            <Line endX="105.66668701171875" endY="158.0" fill="WHITE" layoutX="324.0" layoutY="108.0" startX="178.66668701171875" startY="81.6666259765625" stroke="#9dff00" strokeLineCap="ROUND" strokeWidth="4.0">
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </Line>
+            <Pane layoutX="259.0" layoutY="264.0" prefHeight="35.0" prefWidth="86.0" styleClass="glass-dark">
+               <children>
+                  <Label layoutX="35.0" layoutY="6.0" text="Abs" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Rectangle fx:id="absStatus" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="15.0" layoutX="14.0" layoutY="10.0" stroke="WHITE" strokeType="INSIDE" width="15.0" />
+               </children>
+            </Pane>
+            <Line endX="-71.00003051757812" endY="150.0" fill="WHITE" layoutX="334.0" layoutY="118.0" startX="-142.66668701171875" startY="63.6666259765625" stroke="#9dff00" strokeLineCap="ROUND" strokeWidth="4.0">
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </Line>
+            <Pane layoutX="572.0" layoutY="339.0" prefHeight="35.0" prefWidth="124.0" styleClass="glass-dark">
+               <children>
+                  <Label layoutX="35.0" layoutY="6.0" text="Hamstrings" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Rectangle fx:id="hamsStatus" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="15.0" layoutX="14.0" layoutY="10.0" stroke="WHITE" strokeType="INSIDE" width="15.0" />
+               </children>
+            </Pane>
+            <Line endX="-91.66668701171875" endY="208.6666259765625" fill="WHITE" layoutX="668.0" layoutY="134.0" startX="-132.66668701171875" startY="157.0" stroke="#9dff00" strokeLineCap="ROUND" strokeWidth="4.0">
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </Line>
+            <Pane layoutX="352.0" layoutY="423.0" prefHeight="35.0" prefWidth="86.0" styleClass="glass-dark">
+               <children>
+                  <Label layoutX="35.0" layoutY="6.0" text="Calves" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Rectangle fx:id="calvesStatus" arcHeight="5.0" arcWidth="5.0" fill="RED" height="15.0" layoutX="14.0" layoutY="10.0" stroke="WHITE" strokeType="INSIDE" width="15.0" />
+               </children>
+            </Pane>
+            <Line endX="-178.0" endY="226.33331298828125" fill="WHITE" layoutX="678.0" layoutY="144.0" startX="-244.33331298828125" startY="279.33331298828125" stroke="#9dff00" strokeLineCap="ROUND" strokeWidth="4.0">
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </Line>
+            <Pane layoutX="3.0" layoutY="339.0" prefHeight="35.0" prefWidth="131.0" styleClass="glass-dark">
+               <children>
+                  <Label layoutX="35.0" layoutY="6.0" text="Quadriceps" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Rectangle fx:id="quadricepsStatus" arcHeight="5.0" arcWidth="5.0" fill="RED" height="15.0" layoutX="14.0" layoutY="10.0" stroke="WHITE" strokeType="INSIDE" width="15.0" />
+               </children>
+            </Pane>
+            <Line endX="-533.3333129882812" endY="125.6666259765625" fill="WHITE" layoutX="688.0" layoutY="154.0" startX="-563.6666259765625" startY="187.33331298828125" stroke="#9dff00" strokeLineCap="ROUND" strokeWidth="4.0">
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </Line>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="15.0" layoutX="19.0" layoutY="505.0" stroke="WHITE" strokeType="INSIDE" width="15.0" />
+            <Label layoutX="41.0" layoutY="502.0" text="Just Grinded!" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff9600" height="15.0" layoutX="152.0" layoutY="505.0" stroke="WHITE" strokeType="INSIDE" width="15.0" />
+            <Label layoutX="174.0" layoutY="502.0" text="Take Rest" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="15.0" layoutX="259.0" layoutY="505.0" stroke="WHITE" strokeType="INSIDE" width="15.0" />
+            <Label layoutX="281.0" layoutY="502.0" text="Time to Grind!" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+   <stylesheets>
+      <URL value="@glass_effect.css" />
+      <URL value="@image-button.css" />
+      <URL value="@glass_pane.css" />
+   </stylesheets>
+</AnchorPane>

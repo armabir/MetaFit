@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="990.0" stylesheets="@glass_effect.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.metafit_v1.other_controllers.ExercisePanelController">
+   <children>
+      <Pane layoutX="15.0" layoutY="5.0" prefHeight="60.0" prefWidth="940.0" styleClass="glass-dark">
+         <children>
+            <Label layoutX="806.0" layoutY="10.0" text="Kgs" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="setField" alignment="CENTER" layoutX="510.0" layoutY="6.0" prefHeight="40.0" prefWidth="80.0" styleClass="glass-accent" text="3">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="repField" alignment="CENTER" layoutX="613.0" layoutY="7.0" prefHeight="40.0" prefWidth="80.0" promptText="3" styleClass="glass-accent" text="10">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="weightField" alignment="CENTER" layoutX="719.0" layoutY="7.0" prefHeight="40.0" prefWidth="80.0" styleClass="glass-accent" text="80">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </TextField>
+            <Label fx:id="nameLabel" layoutX="67.0" layoutY="10.0" text="Push up" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="exerciseImage" fitHeight="40.0" fitWidth="40.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <clip>
+                  <Circle centerX="20" centerY="20" radius="20" />
+               </clip>
+               <image>
+                  <Image url="@images/pushup.gif" />
+               </image>
+            </ImageView>
+            <Label fx:id="deleteButton" layoutX="906.0" layoutY="9.0" onMouseClicked="#deletePanel" text="X" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children></Pane>
+   </children>
+</Pane>

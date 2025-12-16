@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="960.0" prefWidth="1860.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #0f172a 0%, #1e293b 50%, #0f172a 100%);" stylesheets="@image-button.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.metafit_v1.user_controllers.UserProfileController">
+   <children>
+      <Pane layoutX="900.0" layoutY="14.0" prefHeight="530.0" prefWidth="700.0" styleClass="glass-frosted" stylesheets="@glass_effect.css">
+         <children>
+            <Pane layoutX="24.0" layoutY="57.0" prefHeight="80.0" prefWidth="350.0" styleClass="glass-card" stylesheets="@glass_effect.css">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="16.0" layoutY="10.0" pickOnBounds="true">
+                     <clip>
+                        <Circle centerX="30" centerY="30" radius="30" />
+                     </clip>
+                     <image>
+                        <Image url="@images/TrainerDP.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="nameLabel" layoutX="94.0" layoutY="13.0" text="Abu Talha" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="userNameLabel1" layoutX="94.0" layoutY="38.0" text="Get Fit Gym" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="24.0" layoutY="204.0" prefHeight="80.0" prefWidth="350.0" styleClass="glass-card" stylesheets="@glass_effect.css">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="16.0" layoutY="10.0" pickOnBounds="true">
+                     <clip>
+                        <Circle centerX="30" centerY="30" radius="30" />
+                     </clip>
+                     <image>
+                        <Image url="@images/TrainerDP.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="nameLabel1" layoutX="94.0" layoutY="13.0" text="Abu Talha" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="userNameLabel11" layoutX="94.0" layoutY="38.0" text="Get Fit Gym" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="24.0" layoutY="294.0" prefHeight="80.0" prefWidth="350.0" styleClass="glass-card" stylesheets="@glass_effect.css">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="16.0" layoutY="10.0" pickOnBounds="true">
+                     <clip>
+                        <Circle centerX="30" centerY="30" radius="30" />
+                     </clip>
+                     <image>
+                        <Image url="@images/TrainerDP.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="nameLabel11" layoutX="94.0" layoutY="13.0" text="Abu Talha" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="userNameLabel111" layoutX="94.0" layoutY="38.0" text="Get Fit Gym" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="900.0" layoutY="558.0" prefHeight="380.0" prefWidth="700.0" styleClass="glass-frosted" stylesheets="@glass_effect.css">
+         <children>
+            <ImageView fitHeight="350.0" fitWidth="450.0" layoutX="74.0" layoutY="15.0" pickOnBounds="true">
+               <image>
+                  <Image url="@icons/BMR%202.PNG" />
+               </image>
+            </ImageView>
+            <Label fx:id="eatLabel" layoutX="556.0" layoutY="23.0" text="200 Cal" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="tefLabel" layoutX="556.0" layoutY="68.0" text="500 Cal" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="neatLabel" layoutX="556.0" layoutY="125.0" text="700 Cal" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="bmrLabel" layoutX="545.0" layoutY="248.0" text="2000 Cal" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane prefHeight="960.0" prefWidth="120.0" styleClass="glass-accent" stylesheets="@glass_effect.css" />
+      <Pane layoutX="140.0" layoutY="13.0" prefHeight="255.0" prefWidth="360.0" styleClass="glass-accent" stylesheets="@glass_effect.css">
+         <children>
+            <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="112.0" layoutY="46.0" pickOnBounds="true">
+               <clip>
+                  <Circle centerX="65" centerY="65" radius="65" />
+               </clip>
+               <image>
+                  <Image url="@images/DP.jpeg" />
+               </image>
+            </ImageView>
+            <Label fx:id="userNameLabel" layoutX="133.0" layoutY="182.0" text="\@armabir" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="311.0" layoutY="203.0" pickOnBounds="true">
+               <image>
+                  <Image url="@icons/edit.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="139.0" layoutY="284.0" prefHeight="660.0" prefWidth="360.0" styleClass="glass-frosted" stylesheets="@glass_effect.css">
+         <children>
+            <TextField layoutX="23.0" layoutY="50.0" prefHeight="45.0" prefWidth="314.0" styleClass="glass-textfield" stylesheets="@glass_textfield_choicebox.css" text="ARM Abir Hasan">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="31.0" layoutY="10.0" text="Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <TextField layoutX="23.0" layoutY="173.0" prefHeight="45.0" prefWidth="314.0" styleClass="glass-textfield" stylesheets="@glass_textfield_choicebox.css" text="armabir1@gmail.com">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="31.0" layoutY="134.0" text="Email" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <TextField layoutX="23.0" layoutY="305.0" prefHeight="45.0" prefWidth="314.0" styleClass="glass-textfield" stylesheets="@glass_textfield_choicebox.css" text="Current Passord">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="31.0" layoutY="266.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <TextField layoutX="23.0" layoutY="363.0" prefHeight="45.0" prefWidth="314.0" styleClass="glass-textfield" stylesheets="@glass_textfield_choicebox.css" text="New Password">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextField>
+            <Button layoutX="136.0" layoutY="423.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" styleClass="glass-button-small-primary" stylesheets="@glass_button.css" text="Change Password" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="519.0" layoutY="14.0" prefHeight="777.0" prefWidth="360.0" styleClass="glass-frosted" stylesheets="@glass_effect.css">
+         <children>
+            <TextField layoutX="23.0" layoutY="320.0" prefHeight="45.0" prefWidth="314.0" styleClass="glass-textfield" stylesheets="@glass_textfield_choicebox.css" text="70 Kgs">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="31.0" layoutY="279.0" text="Weight" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <TextField layoutX="23.0" layoutY="444.0" prefHeight="45.0" prefWidth="314.0" styleClass="glass-textfield" stylesheets="@glass_textfield_choicebox.css" text="5' 9&quot;">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="31.0" layoutY="403.0" text="Height" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <TextField layoutX="23.0" layoutY="568.0" prefHeight="45.0" prefWidth="314.0" styleClass="glass-textfield" stylesheets="@glass_textfield_choicebox.css" text="Weight Loss">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="31.0" layoutY="528.0" text="Target" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <TextField layoutX="23.0" layoutY="690.0" prefHeight="45.0" prefWidth="314.0" styleClass="glass-textfield" stylesheets="@glass_textfield_choicebox.css" text="Gym &amp; Run">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="31.0" layoutY="650.0" text="Activity Level" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="140.0" text="Gender" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <ChoiceBox layoutX="23.0" layoutY="181.0" prefHeight="50.0" prefWidth="314.0" styleClass="glass-choicebox" stylesheets="@glass_textfield_choicebox.css" />
+            <Label layoutX="31.0" layoutY="16.0" text="Birthdate" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <DatePicker layoutX="23.0" layoutY="57.0" prefHeight="45.0" prefWidth="314.0" promptText="09 - 05 - 2003" styleClass="glass-choicebox" stylesheets="@glass_textfield_choicebox.css" />
+         </children>
+      </Pane>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" height="80.0" layoutY="265.0" stroke="#85cc17" strokeType="INSIDE" strokeWidth="3.0" style="-fx-fill: transparent;" width="120.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7838477492332458" green="1.0" blue="0.4104938209056854" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5215686559677124" green="0.800000011920929" blue="0.09019608050584793" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <Glow level="0.5" />
+         </effect>
+      </Rectangle>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true">
+         <clip>
+            <Circle centerX="50" centerY="50" radius="50" />
+         </clip>
+         <image>
+            <Image url="@icons/logo.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="38.0" layoutY="282.0" pickOnBounds="true" styleClass="image-button">
+         <image>
+            <Image url="@icons/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="37.0" layoutY="362.0" onMouseClicked="#gotoDashboard" pickOnBounds="true" styleClass="image-button">
+         <image>
+            <Image url="@icons/layout.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="38.0" layoutY="442.0" onMouseClicked="#gotoAutomeal" pickOnBounds="true" styleClass="image-button">
+         <image>
+            <Image url="@icons/Ai.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="38.0" layoutY="522.0" onMouseClicked="#gotoMealEntry" pickOnBounds="true" styleClass="image-button">
+         <image>
+            <Image url="@icons/brunch.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="37.0" layoutY="602.0" onMouseClicked="#gotoWorkout" pickOnBounds="true" styleClass="image-button">
+         <image>
+            <Image url="@icons/gym.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="38.0" layoutY="886.0" pickOnBounds="true">
+         <image>
+            <Image url="@icons/logout.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="574.0" layoutY="834.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" styleClass="glass-button-primary" stylesheets="@glass_button.css" text="Save Changes" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Label layoutX="928.0" layoutY="28.0" text="Current Trainer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="928.0" layoutY="172.0" text="Trainer Requests" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="1289.0" layoutY="70.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="250.0" styleClass="glass-button" stylesheets="@glass_button.css" text="Set Appoinment" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#465149" height="80.0" layoutX="1289.0" layoutY="217.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#85cc17" height="80.0" layoutX="1385.0" layoutY="217.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="1312.0" layoutY="240.0" pickOnBounds="true">
+         <image>
+            <Image url="@icons/close.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="1400.0" layoutY="232.0" pickOnBounds="true">
+         <image>
+            <Image url="@icons/check.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#465149" height="80.0" layoutX="1289.0" layoutY="306.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#85cc17" height="80.0" layoutX="1385.0" layoutY="306.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="1312.0" layoutY="328.0" pickOnBounds="true">
+         <image>
+            <Image url="@icons/close.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="1400.0" layoutY="321.0" pickOnBounds="true">
+         <image>
+            <Image url="@icons/check.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

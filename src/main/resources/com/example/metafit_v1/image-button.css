@@ -1,0 +1,218 @@
+/* ============================================
+   GLASS EFFECT IMAGEVIEW BUTTONS (Glow Effect)
+   ============================================ */
+
+/* Standard ImageView Button - Subtle Glow */
+.image-button {
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0), 0, 0, 0, 0);
+    -fx-opacity: 0.8;
+    -fx-cursor: hand;
+    -fx-transition: effect 0.3s ease, -fx-opacity 0.3s ease;
+}
+
+.image-button:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 0.8), 10, 0, 0, 8);
+    -fx-opacity: 1;
+}
+
+.image-button:pressed {
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 1), 15, 0, 0, 10);
+    -fx-opacity: 0.9;
+}
+
+
+/* Bright Green Glow ImageView Button */
+.image-button-green {
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 0), 0, 0, 0, 0);
+    -fx-opacity: 0.85;
+    -fx-cursor: hand;
+}
+
+.image-button-green:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 1), 12, 0.5, 0, 10);
+    -fx-opacity: 1;
+}
+
+.image-button-green:pressed {
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 1), 18, 1, 0, 12);
+    -fx-opacity: 0.9;
+}
+
+
+/* Strong Glow ImageView Button */
+.image-button-strong {
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0), 0, 0, 0, 0);
+    -fx-opacity: 0.75;
+    -fx-cursor: hand;
+}
+
+.image-button-strong:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 1), 15, 1, 0, 12);
+    -fx-opacity: 1;
+}
+
+.image-button-strong:pressed {
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 1), 20, 1, 0, 15);
+    -fx-opacity: 0.95;
+}
+
+
+/* Soft Glow ImageView Button */
+.image-button-soft {
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0), 0, 0, 0, 0);
+    -fx-opacity: 0.9;
+    -fx-cursor: hand;
+}
+
+.image-button-soft:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 0.6), 8, 0, 0, 6);
+    -fx-opacity: 1;
+}
+
+.image-button-soft:pressed {
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 0.8), 12, 0, 0, 8);
+}
+
+
+/* Blue Glow ImageView Button */
+.image-button-blue {
+    -fx-effect: dropshadow(three-pass-box, rgba(59, 130, 246, 0), 0, 0, 0, 0);
+    -fx-opacity: 0.85;
+    -fx-cursor: hand;
+}
+
+.image-button-blue:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(59, 130, 246, 0.9), 12, 0.5, 0, 10);
+    -fx-opacity: 1;
+}
+
+.image-button-blue:pressed {
+    -fx-effect: dropshadow(three-pass-box, rgba(59, 130, 246, 1), 18, 1, 0, 12);
+    -fx-opacity: 0.9;
+}
+
+
+/* Red Glow ImageView Button */
+.image-button-red {
+    -fx-effect: dropshadow(three-pass-box, rgba(239, 68, 68, 0), 0, 0, 0, 0);
+    -fx-opacity: 0.85;
+    -fx-cursor: hand;
+}
+
+.image-button-red:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(239, 68, 68, 0.9), 12, 0.5, 0, 10);
+    -fx-opacity: 1;
+}
+
+.image-button-red:pressed {
+    -fx-effect: dropshadow(three-pass-box, rgba(239, 68, 68, 1), 18, 1, 0, 12);
+    -fx-opacity: 0.9;
+}
+
+
+/* Purple Glow ImageView Button */
+.image-button-purple {
+    -fx-effect: dropshadow(three-pass-box, rgba(168, 85, 247, 0), 0, 0, 0, 0);
+    -fx-opacity: 0.85;
+    -fx-cursor: hand;
+}
+
+.image-button-purple:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(168, 85, 247, 0.9), 12, 0.5, 0, 10);
+    -fx-opacity: 1;
+}
+
+.image-button-purple:pressed {
+    -fx-effect: dropshadow(three-pass-box, rgba(168, 85, 247, 1), 18, 1, 0, 12);
+    -fx-opacity: 0.9;
+}
+
+
+/* White Glow ImageView Button */
+.image-button-white {
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0), 0, 0, 0, 0);
+    -fx-opacity: 0.85;
+    -fx-cursor: hand;
+}
+
+.image-button-white:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.8), 12, 0.5, 0, 10);
+    -fx-opacity: 1;
+}
+
+.image-button-white:pressed {
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 1), 18, 1, 0, 12);
+    -fx-opacity: 0.9;
+}
+
+
+/* ============================================
+   CIRCULAR IMAGEVIEW BUTTONS
+   ============================================ */
+
+/* Small Circular Button */
+.image-button-circle-small {
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 0), 0, 0, 0, 0);
+    -fx-opacity: 0.8;
+    -fx-cursor: hand;
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+}
+
+.image-button-circle-small:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 1), 8, 0, 0, 6);
+    -fx-opacity: 1;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+.image-button-circle-small:pressed {
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 1), 12, 0, 0, 8);
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
+
+
+/* Large Circular Button */
+.image-button-circle-large {
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 0), 0, 0, 0, 0);
+    -fx-opacity: 0.85;
+    -fx-cursor: hand;
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+}
+
+.image-button-circle-large:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 1), 15, 0.5, 0, 12);
+    -fx-opacity: 1;
+    -fx-scale-x: 1.15;
+    -fx-scale-y: 1.15;
+}
+
+.image-button-circle-large:pressed {
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 1), 20, 1, 0, 15);
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
+
+
+/* ============================================
+   ICON SIDEBAR BUTTONS
+   ============================================ */
+
+/* Sidebar Icon Button */
+.sidebar-icon-button {
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0), 0, 0, 0, 0);
+    -fx-opacity: 0.9;
+    -fx-cursor: hand;
+}
+
+.sidebar-icon-button:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.6), 10, 0, 0, 8);
+    -fx-opacity: 1;
+}
+
+.sidebar-icon-button:pressed {
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.9), 15, 0, 0, 10);
+    -fx-opacity: 0.9;
+}

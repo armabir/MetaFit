@@ -1,0 +1,341 @@
+/* ============================================
+   GLASS EFFECT BUTTONS
+   ============================================ */
+
+/* Standard Glass Button */
+.glass-button {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-border-color: rgba(255, 255, 255, 0.2);
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+}
+
+/* Glass Button hover */
+.glass-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 6, 0, 0, 4);
+}
+
+/* Glass Button pressed */
+.glass-button:pressed {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-border-color: rgba(132, 204, 22, 0.6);
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 0.5), 8, 0, 0, 4);
+}
+
+/* Glass Button selected state (after pressed) */
+.glass-button:selected {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-border-color: rgba(132, 204, 22, 0.6);
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 0.5), 8, 0, 0, 4);
+}
+
+/* Glass Button focused */
+.glass-button:focused {
+    -fx-border-color: rgba(132, 204, 22, 0.6);
+    -fx-border-width: 2;
+}
+
+
+/* ============================================
+   PRIMARY BUTTON (Green Accent)
+   ============================================ */
+
+/* Primary Glass Button - Green gradient */
+.glass-button-primary {
+    -fx-background-color: linear-gradient(to bottom, rgba(132, 204, 22, 0.8), rgba(101, 163, 13, 0.8));
+    -fx-border-color: rgba(132, 204, 22, 0.6);
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 0.3), 6, 0, 0, 2);
+}
+
+.glass-button-primary:hover {
+    -fx-background-color: linear-gradient(to bottom, rgba(132, 204, 22, 1), rgba(101, 163, 13, 1));
+    -fx-border-color: #84cc16;
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 0.5), 8, 0, 0, 4);
+}
+
+.glass-button-primary:pressed {
+    -fx-background-color: linear-gradient(to bottom, rgba(101, 163, 13, 0.9), rgba(80, 130, 10, 0.9));
+    -fx-text-fill: rgba(255, 255, 255, 0.9);
+    -fx-border-color: #84cc16;
+    -fx-border-width: 2;
+}
+
+.glass-button-primary:selected {
+    -fx-background-color: linear-gradient(to bottom, rgba(132, 204, 22, 0.95), rgba(101, 163, 13, 0.95));
+    -fx-text-fill: #0f172a;
+    -fx-border-color: #84cc16;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 0.6), 10, 0, 0, 6);
+}
+
+
+/* ============================================
+   SECONDARY BUTTON (Light Glass)
+   ============================================ */
+
+.glass-button-secondary {
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+    -fx-border-color: rgba(255, 255, 255, 0.25);
+    -fx-border-width: 1.5;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+}
+
+.glass-button-secondary:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.18);
+    -fx-border-color: rgba(255, 255, 255, 0.35);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 6, 0, 0, 4);
+}
+
+.glass-button-secondary:pressed {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-border-color: rgba(255, 255, 255, 0.2);
+}
+
+.glass-button-secondary:selected {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-border-color: rgba(132, 204, 22, 0.6);
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 0.5), 8, 0, 0, 4);
+}
+
+
+/* ============================================
+   DANGER BUTTON (Red)
+   ============================================ */
+
+.glass-button-danger {
+    -fx-background-color: linear-gradient(to bottom, rgba(239, 68, 68, 0.7), rgba(220, 38, 38, 0.7));
+    -fx-border-color: rgba(239, 68, 68, 0.6);
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(239, 68, 68, 0.3), 6, 0, 0, 2);
+}
+
+.glass-button-danger:hover {
+    -fx-background-color: linear-gradient(to bottom, rgba(239, 68, 68, 0.9), rgba(220, 38, 38, 0.9));
+    -fx-border-color: #ef4444;
+    -fx-effect: dropshadow(three-pass-box, rgba(239, 68, 68, 0.5), 8, 0, 0, 4);
+}
+
+.glass-button-danger:pressed {
+    -fx-background-color: linear-gradient(to bottom, rgba(220, 38, 38, 0.8), rgba(185, 28, 28, 0.8));
+    -fx-border-color: #ef4444;
+    -fx-border-width: 2;
+}
+
+.glass-button-danger:selected {
+    -fx-background-color: linear-gradient(to bottom, rgba(239, 68, 68, 0.95), rgba(220, 38, 38, 0.95));
+    -fx-border-color: #ef4444;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(three-pass-box, rgba(239, 68, 68, 0.6), 10, 0, 0, 6);
+}
+
+
+/* ============================================
+   SUCCESS BUTTON (Green - Solid)
+   ============================================ */
+
+.glass-button-success {
+    -fx-background-color: linear-gradient(to bottom, rgba(34, 197, 94, 0.8), rgba(22, 163, 74, 0.8));
+    -fx-border-color: rgba(34, 197, 94, 0.6);
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(34, 197, 94, 0.3), 6, 0, 0, 2);
+}
+
+.glass-button-success:hover {
+    -fx-background-color: linear-gradient(to bottom, rgba(34, 197, 94, 1), rgba(22, 163, 74, 1));
+    -fx-border-color: #22c55e;
+    -fx-effect: dropshadow(three-pass-box, rgba(34, 197, 94, 0.5), 8, 0, 0, 4);
+}
+
+
+/* ============================================
+   SMALL BUTTONS
+   ============================================ */
+
+.glass-button-small {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-border-color: rgba(255, 255, 255, 0.2);
+    -fx-border-width: 1;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-text-fill: white;
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+    -fx-padding: 6 12;
+    -fx-cursor: hand;
+}
+
+.glass-button-small:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+}
+
+.glass-button-small-primary {
+    -fx-background-color: linear-gradient(to bottom, rgba(132, 204, 22, 0.8), rgba(101, 163, 13, 0.8));
+    -fx-border-color: rgba(132, 204, 22, 0.6);
+    -fx-border-width: 1;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+    -fx-padding: 6 12;
+    -fx-cursor: hand;
+}
+
+.glass-button-small-primary:hover {
+    -fx-background-color: linear-gradient(to bottom, rgba(132, 204, 22, 1), rgba(101, 163, 13, 1));
+    -fx-border-color: #84cc16;
+}
+
+
+/* ============================================
+   LARGE BUTTONS
+   ============================================ */
+
+.glass-button-large {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-border-color: rgba(255, 255, 255, 0.2);
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+    -fx-padding: 15 30;
+    -fx-cursor: hand;
+}
+
+.glass-button-large:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 8, 0, 0, 6);
+}
+
+.glass-button-large-primary {
+    -fx-background-color: linear-gradient(to bottom, rgba(132, 204, 22, 0.9), rgba(101, 163, 13, 0.9));
+    -fx-border-color: rgba(132, 204, 22, 0.7);
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+    -fx-padding: 15 30;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 0.4), 8, 0, 0, 4);
+}
+
+.glass-button-large-primary:hover {
+    -fx-background-color: linear-gradient(to bottom, rgba(132, 204, 22, 1), rgba(101, 163, 13, 1));
+    -fx-border-color: #84cc16;
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 0.6), 10, 0, 0, 6);
+}
+
+
+/* ============================================
+   ICON BUTTONS (Circular)
+   ============================================ */
+
+.glass-button-icon {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-border-color: rgba(255, 255, 255, 0.2);
+    -fx-border-width: 1;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+    -fx-text-fill: white;
+    -fx-font-size: 16;
+    -fx-padding: 12;
+    -fx-cursor: hand;
+    -fx-min-width: 45;
+    -fx-min-height: 45;
+    -fx-pref-width: 45;
+    -fx-pref-height: 45;
+}
+
+.glass-button-icon:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-border-color: rgba(132, 204, 22, 0.5);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 6, 0, 0, 4);
+}
+
+.glass-button-icon-primary {
+    -fx-background-color: linear-gradient(to bottom, rgba(132, 204, 22, 0.8), rgba(101, 163, 13, 0.8));
+    -fx-border-color: rgba(132, 204, 22, 0.6);
+    -fx-border-width: 1;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16;
+    -fx-padding: 12;
+    -fx-cursor: hand;
+    -fx-min-width: 45;
+    -fx-min-height: 45;
+    -fx-pref-width: 45;
+    -fx-pref-height: 45;
+}
+
+.glass-button-icon-primary:hover {
+    -fx-background-color: linear-gradient(to bottom, rgba(132, 204, 22, 1), rgba(101, 163, 13, 1));
+    -fx-border-color: #84cc16;
+}
+
+
+/* ============================================
+   DISABLED STATE (All Buttons)
+   ============================================ */
+
+.glass-button:disabled,
+.glass-button-primary:disabled,
+.glass-button-secondary:disabled,
+.glass-button-danger:disabled,
+.glass-button-success:disabled,
+.glass-button-small:disabled,
+.glass-button-small-primary:disabled,
+.glass-button-large:disabled,
+.glass-button-large-primary:disabled,
+.glass-button-icon:disabled,
+.glass-button-icon-primary:disabled {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-text-fill: rgba(255, 255, 255, 0.3);
+    -fx-cursor: default;
+}

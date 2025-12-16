@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.metafit_v1.TestController"
+            style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #0f172a 0%, #1e293b 50%, #0f172a 100%); -fx-padding: 20;">
+
+    <!-- LEFT SIDEBAR -->
+    <left>
+        <VBox spacing="30" style="-fx-background-color: linear-gradient(to bottom, rgba(132, 204, 22, 0.9), rgba(101, 163, 13, 0.9)); -fx-padding: 20; -fx-border-radius: 20; -fx-background-radius: 20; -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 0.2), 8, 0, 0, 8);" prefWidth="100">
+
+            <!-- Sidebar Icons -->
+            <HBox alignment="CENTER">
+                <ImageView fitHeight="50" fitWidth="50" onMouseClicked="#gotoProfile" style="-fx-cursor: hand;" pickOnBounds="true">
+                    <image>
+                        <Image url="@icons/user.png" />
+                    </image>
+                </ImageView>
+            </HBox>
+
+            <HBox alignment="CENTER">
+                <ImageView fitHeight="50" fitWidth="50" style="-fx-cursor: hand;" pickOnBounds="true">
+                    <image>
+                        <Image url="@icons/layout.png" />
+                    </image>
+                </ImageView>
+            </HBox>
+
+            <HBox alignment="CENTER">
+                <ImageView fitHeight="50" fitWidth="50" onMouseClicked="#gotoAutomeal" style="-fx-cursor: hand;" pickOnBounds="true">
+                    <image>
+                        <Image url="@icons/Ai.png" />
+                    </image>
+                </ImageView>
+            </HBox>
+
+            <HBox alignment="CENTER">
+                <ImageView fitHeight="50" fitWidth="50" onMouseClicked="#gotoMealEntry" style="-fx-cursor: hand;" pickOnBounds="true">
+                    <image>
+                        <Image url="@icons/brunch.png" />
+                    </image>
+                </ImageView>
+            </HBox>
+
+            <HBox alignment="CENTER">
+                <ImageView fitHeight="50" fitWidth="50" onMouseClicked="#gotoWorkout" style="-fx-cursor: hand;" pickOnBounds="true">
+                    <image>
+                        <Image url="@icons/gym.png" />
+                    </image>
+                </ImageView>
+            </HBox>
+
+            <VBox VBox.vgrow="ALWAYS" />
+
+            <HBox alignment="CENTER">
+                <ImageView fitHeight="50" fitWidth="50" style="-fx-cursor: hand;" pickOnBounds="true">
+                    <image>
+                        <Image url="@icons/logout.png" />
+                    </image>
+                </ImageView>
+            </HBox>
+        </VBox>
+    </left>
+
+    <!-- MAIN CONTENT -->
+    <center>
+        <ScrollPane fitToWidth="true" style="-fx-background-color: transparent; -fx-control-inner-background: transparent;">
+            <VBox spacing="20" style="-fx-padding: 0;">
+
+                <!-- HEADER -->
+                <VBox spacing="8" style="-fx-padding: 0 20 0 20;">
+                    <Label text="Welcome back, Abir!" style="-fx-font-size: 42; -fx-font-weight: bold; -fx-text-fill: #84cc16;" />
+                    <Label text="Ready to track your fitness with swag?" style="-fx-font-size: 18; -fx-text-fill: rgba(255, 255, 255, 0.7);" />
+                </VBox>
+
+                <!-- PROFILE CARD -->
+                <HBox spacing="20" style="-fx-background-color: rgba(255, 255, 255, 0.1); -fx-border-color: rgba(255, 255, 255, 0.2); -fx-border-width: 1; -fx-border-radius: 16; -fx-background-radius: 16; -fx-padding: 30; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 8, 0, 0, 8); -fx-margin: 0 20 0 20;" alignment="CENTER_LEFT" >
+                    <ImageView fitHeight="100" fitWidth="100" pickOnBounds="true">
+                        <clip>
+                            <Circle centerX="50" centerY="50" radius="50" />
+                        </clip>
+                        <image>
+                            <Image url="@images/DP.jpeg" />
+                        </image>
+                    </ImageView>
+
+                    <VBox spacing="8" HBox.hgrow="ALWAYS">
+                        <Label text="ARM Abir" style="-fx-font-size: 24; -fx-font-weight: bold; -fx-text-fill: white;" />
+                        <Label text="armabir" style="-fx-font-size: 16; -fx-text-fill: rgba(255, 255, 255, 0.6);" />
+                        <HBox spacing="20">
+                            <Label text="📊 Weight Loss" style="-fx-text-fill: rgba(255, 255, 255, 0.7);" />
+                            <Label text="⚖️ 80 kg" style="-fx-text-fill: rgba(255, 255, 255, 0.7);" />
+                            <Label text="📏 5'9\" style="-fx-text-fill: rgba(255, 255, 255, 0.7);" />
+                            <Label text="🔥 2300 Cal" style="-fx-text-fill: rgba(255, 255, 255, 0.7);" />
+                        </HBox>
+                    </VBox>
+                </HBox>
+
+                <!-- STATS GRID -->
+                <GridPane style="-fx-background-color: rgba(255, 255, 255, 0.1); -fx-border-color: rgba(255, 255, 255, 0.2); -fx-border-width: 1; -fx-border-radius: 16; -fx-background-radius: 16; -fx-padding: 20; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 8, 0, 0, 8); -fx-margin: 0 20 0 20;">
+<!--                    <ColumnConstraints percentWidth="33.33" />-->
+<!--                    <ColumnConstraints percentWidth="33.33" />-->
+<!--                    <ColumnConstraints percentWidth="33.33" />-->
+
+                    <!-- BMR -->
+                    <VBox spacing="8" style="-fx-background-color: rgba(132, 204, 22, 0.1); -fx-border-color: rgba(132, 204, 22, 0.3); -fx-border-width: 1; -fx-border-radius: 12; -fx-background-radius: 12; -fx-padding: 15; -fx-alignment: center;" alignment="CENTER">
+                        <Label text="BMR" style="-fx-font-size: 12; -fx-text-fill: rgba(255, 255, 255, 0.6); -fx-font-weight: bold;" />
+                        <Label text="2000" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #84cc16;" />
+                        <Label text="Cal" style="-fx-font-size: 10; -fx-text-fill: rgba(255, 255, 255, 0.5);" />
+                    </VBox>
+
+                    <!-- EAT -->
+                    <VBox spacing="8" style="-fx-background-color: rgba(132, 204, 22, 0.1); -fx-border-color: rgba(132, 204, 22, 0.3); -fx-border-width: 1; -fx-border-radius: 12; -fx-background-radius: 12; -fx-padding: 15; -fx-alignment: center;" alignment="CENTER" GridPane.columnIndex="1">
+                        <Label text="EAT" style="-fx-font-size: 12; -fx-text-fill: rgba(255, 255, 255, 0.6); -fx-font-weight: bold;" />
+                        <Label text="200" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #84cc16;" />
+                        <Label text="Cal" style="-fx-font-size: 10; -fx-text-fill: rgba(255, 255, 255, 0.5);" />
+                    </VBox>
+
+                    <!-- TEF -->
+                    <VBox spacing="8" style="-fx-background-color: rgba(132, 204, 22, 0.1); -fx-border-color: rgba(132, 204, 22, 0.3); -fx-border-width: 1; -fx-border-radius: 12; -fx-background-radius: 12; -fx-padding: 15; -fx-alignment: center;" alignment="CENTER" GridPane.columnIndex="2">
+                        <Label text="TEF" style="-fx-font-size: 12; -fx-text-fill: rgba(255, 255, 255, 0.6); -fx-font-weight: bold;" />
+                        <Label text="500" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #84cc16;" />
+                        <Label text="Cal" style="-fx-font-size: 10; -fx-text-fill: rgba(255, 255, 255, 0.5);" />
+                    </VBox>
+                </GridPane>
+
+                <!-- DAY SELECTOR & MACROS -->
+                <VBox spacing="20" style="-fx-background-color: rgba(255, 255, 255, 0.1); -fx-border-color: rgba(255, 255, 255, 0.2); -fx-border-width: 1; -fx-border-radius: 16; -fx-background-radius: 16; -fx-padding: 25; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 8, 0, 0, 8); -fx-margin: 0 20 0 20;">
+                    <Label text="Daily Macros Breakdown" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: white;" />
+
+                    <!-- Day Buttons -->
+                    <GridPane hgap="10">
+<!--                        <ColumnConstraints percentWidth="14.28" />-->
+<!--                        <ColumnConstraints percentWidth="14.28" />-->
+<!--                        <ColumnConstraints percentWidth="14.28" />-->
+<!--                        <ColumnConstraints percentWidth="14.28" />-->
+<!--                        <ColumnConstraints percentWidth="14.28" />-->
+<!--                        <ColumnConstraints percentWidth="14.28" />-->
+<!--                        <ColumnConstraints percentWidth="14.28" />-->
+
+                        <Button text="Mon" style="-fx-background-color: rgba(255, 255, 255, 0.1); -fx-text-fill: white; -fx-border-color: rgba(255, 255, 255, 0.2); -fx-border-width: 1; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 10; -fx-font-weight: bold;" />
+                        <Button text="Tue" style="-fx-background-color: rgba(255, 255, 255, 0.1); -fx-text-fill: white; -fx-border-color: rgba(255, 255, 255, 0.2); -fx-border-width: 1; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 10; -fx-font-weight: bold;" GridPane.columnIndex="1" />
+                        <Button text="Wed" style="-fx-background-color: rgba(255, 255, 255, 0.1); -fx-text-fill: white; -fx-border-color: rgba(255, 255, 255, 0.2); -fx-border-width: 1; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 10; -fx-font-weight: bold;" GridPane.columnIndex="2" />
+                        <Button text="Thu" style="-fx-background-color: linear-gradient(to right, #84cc16, #a3e635); -fx-text-fill: #0f172a; -fx-border-color: #84cc16; -fx-border-width: 1; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 10; -fx-font-weight: bold;" GridPane.columnIndex="3" />
+                        <Button text="Fri" style="-fx-background-color: rgba(255, 255, 255, 0.1); -fx-text-fill: white; -fx-border-color: rgba(255, 255, 255, 0.2); -fx-border-width: 1; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 10; -fx-font-weight: bold;" GridPane.columnIndex="4" />
+                        <Button text="Sat" style="-fx-background-color: rgba(255, 255, 255, 0.1); -fx-text-fill: white; -fx-border-color: rgba(255, 255, 255, 0.2); -fx-border-width: 1; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 10; -fx-font-weight: bold;" GridPane.columnIndex="5" />
+                        <Button text="Sun" style="-fx-background-color: rgba(255, 255, 255, 0.1); -fx-text-fill: white; -fx-border-color: rgba(255, 255, 255, 0.2); -fx-border-width: 1; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 10; -fx-font-weight: bold;" GridPane.columnIndex="6" />
+                    </GridPane>
+
+                    <!-- Macro Bars -->
+                    <GridPane hgap="15">
+<!--                        <ColumnConstraints percentWidth="16.67" />-->
+<!--                        <ColumnConstraints percentWidth="16.67" />-->
+<!--                        <ColumnConstraints percentWidth="16.67" />-->
+<!--                        <ColumnConstraints percentWidth="16.67" />-->
+<!--                        <ColumnConstraints percentWidth="16.67" />-->
+<!--                        <ColumnConstraints percentWidth="16.67" />-->
+
+                        <!-- Protein -->
+                        <VBox spacing="8" alignment="TOP_CENTER">
+                            <Label text="Protein" style="-fx-font-size: 12; -fx-text-fill: rgba(255, 255, 255, 0.6); -fx-font-weight: bold;" />
+                            <VBox style="-fx-background-color: rgba(0, 0, 0, 0.3); -fx-border-radius: 12; -fx-background-radius: 12;" prefHeight="200">
+                                <VBox style="-fx-background-color: linear-gradient(to bottom, #84cc16, #65a30d); -fx-border-radius: 12; -fx-background-radius: 12; -fx-alignment: bottom-center; -fx-padding: 8;" VBox.vgrow="ALWAYS" prefHeight="130">
+                                    <Label text="150g" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #0f172a;" />
+                                </VBox>
+                            </VBox>
+                        </VBox>
+
+                        <!-- Carbs -->
+                        <VBox spacing="8" alignment="TOP_CENTER" GridPane.columnIndex="1">
+                            <Label text="Carbs" style="-fx-font-size: 12; -fx-text-fill: rgba(255, 255, 255, 0.6); -fx-font-weight: bold;" />
+                            <VBox style="-fx-background-color: rgba(0, 0, 0, 0.3); -fx-border-radius: 12; -fx-background-radius: 12;" prefHeight="200">
+                                <VBox style="-fx-background-color: linear-gradient(to bottom, #84cc16, #65a30d); -fx-border-radius: 12; -fx-background-radius: 12; -fx-alignment: bottom-center; -fx-padding: 8;" VBox.vgrow="ALWAYS" prefHeight="150">
+                                    <Label text="300g" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #0f172a;" />
+                                </VBox>
+                            </VBox>
+                        </VBox>
+
+                        <!-- Fat -->
+                        <VBox spacing="8" alignment="TOP_CENTER" GridPane.columnIndex="2">
+                            <Label text="Fat" style="-fx-font-size: 12; -fx-text-fill: rgba(255, 255, 255, 0.6); -fx-font-weight: bold;" />
+                            <VBox style="-fx-background-color: rgba(0, 0, 0, 0.3); -fx-border-radius: 12; -fx-background-radius: 12;" prefHeight="200">
+                                <VBox style="-fx-background-color: linear-gradient(to bottom, #84cc16, #65a30d); -fx-border-radius: 12; -fx-background-radius: 12; -fx-alignment: bottom-center; -fx-padding: 8;" VBox.vgrow="ALWAYS" prefHeight="90">
+                                    <Label text="65g" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #0f172a;" />
+                                </VBox>
+                            </VBox>
+                        </VBox>
+
+                        <!-- Fiber -->
+                        <VBox spacing="8" alignment="TOP_CENTER" GridPane.columnIndex="3">
+                            <Label text="Fiber" style="-fx-font-size: 12; -fx-text-fill: rgba(255, 255, 255, 0.6); -fx-font-weight: bold;" />
+                            <VBox style="-fx-background-color: rgba(0, 0, 0, 0.3); -fx-border-radius: 12; -fx-background-radius: 12;" prefHeight="200">
+                                <VBox style="-fx-background-color: linear-gradient(to bottom, #84cc16, #65a30d); -fx-border-radius: 12; -fx-background-radius: 12; -fx-alignment: bottom-center; -fx-padding: 8;" VBox.vgrow="ALWAYS" prefHeight="160">
+                                    <Label text="35g" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #0f172a;" />
+                                </VBox>
+                            </VBox>
+                        </VBox>
+
+                        <!-- Sugar -->
+                        <VBox spacing="8" alignment="TOP_CENTER" GridPane.columnIndex="4">
+                            <Label text="Sugar" style="-fx-font-size: 12; -fx-text-fill: rgba(255, 255, 255, 0.6); -fx-font-weight: bold;" />
+                            <VBox style="-fx-background-color: rgba(0, 0, 0, 0.3); -fx-border-radius: 12; -fx-background-radius: 12;" prefHeight="200">
+                                <VBox style="-fx-background-color: linear-gradient(to bottom, #84cc16, #65a30d); -fx-border-radius: 12; -fx-background-radius: 12; -fx-alignment: bottom-center; -fx-padding: 8;" VBox.vgrow="ALWAYS" prefHeight="100">
+                                    <Label text="45g" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #0f172a;" />
+                                </VBox>
+                            </VBox>
+                        </VBox>
+
+                        <!-- Water -->
+                        <VBox spacing="8" alignment="TOP_CENTER" GridPane.columnIndex="5">
+                            <Label text="Water" style="-fx-font-size: 12; -fx-text-fill: rgba(255, 255, 255, 0.6); -fx-font-weight: bold;" />
+                            <VBox style="-fx-background-color: rgba(0, 0, 0, 0.3); -fx-border-radius: 12; -fx-background-radius: 12;" prefHeight="200">
+                                <VBox style="-fx-background-color: linear-gradient(to bottom, #84cc16, #65a30d); -fx-border-radius: 12; -fx-background-radius: 12; -fx-alignment: bottom-center; -fx-padding: 8;" VBox.vgrow="ALWAYS" prefHeight="140">
+                                    <Label text="3.5L" style="-fx-font-weight: bold; -fx-font-size: 12; -fx-text-fill: #0f172a;" />
+                                </VBox>
+                            </VBox>
+                        </VBox>
+                    </GridPane>
+                </VBox>
+
+                <!-- CHARTS & NUTRITION SUMMARY -->
+                <HBox spacing="20" style="-fx-margin: 0 20 0 20; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 8, 0, 0, 8);">
+                    <!-- Chart -->
+                    <VBox style="-fx-background-color: rgba(255, 255, 255, 0.1); -fx-border-color: rgba(255, 255, 255, 0.2); -fx-border-width: 1; -fx-border-radius: 16; -fx-background-radius: 16; -fx-padding: 25;" spacing="15" HBox.hgrow="ALWAYS">
+                        <Label text="Weight Progress" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: white;" />
+                        <LineChart fx:id="weightLineChart" prefHeight="250" prefWidth="400">
+                            <xAxis>
+                                <CategoryAxis />
+                            </xAxis>
+                            <yAxis>
+                                <NumberAxis />
+                            </yAxis>
+                        </LineChart>
+                    </VBox>
+
+                    <!-- Nutrition Summary -->
+                    <VBox spacing="15" style="-fx-background-color: rgba(255, 255, 255, 0.1); -fx-border-color: rgba(255, 255, 255, 0.2); -fx-border-width: 1; -fx-border-radius: 16; -fx-background-radius: 16; -fx-padding: 25;" prefWidth="300">
+                        <Label text="Nutrition Summary" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: white;" />
+
+                        <HBox spacing="15" style="-fx-background-color: rgba(132, 204, 22, 0.1); -fx-border-left: 3px solid #84cc16; -fx-padding: 12; -fx-border-radius: 8; -fx-background-radius: 8;">
+                            <Label text="Protein" style="-fx-text-fill: rgba(255, 255, 255, 0.7);" HBox.hgrow="ALWAYS" />
+                            <Label text="150g" style="-fx-font-weight: bold; -fx-text-fill: #84cc16; -fx-font-size: 14;" />
+                        </HBox>
+
+                        <HBox spacing="15" style="-fx-background-color: rgba(132, 204, 22, 0.1); -fx-border-left: 3px solid #84cc16; -fx-padding: 12; -fx-border-radius: 8; -fx-background-radius: 8;">
+                            <Label text="Carbs" style="-fx-text-fill: rgba(255, 255, 255, 0.7);" HBox.hgrow="ALWAYS" />
+                            <Label text="300g" style="-fx-font-weight: bold; -fx-text-fill: #84cc16; -fx-font-size: 14;" />
+                        </HBox>
+
+                        <HBox spacing="15" style="-fx-background-color: rgba(132, 204, 22, 0.1); -fx-border-left: 3px solid #84cc16; -fx-padding: 12; -fx-border-radius: 8; -fx-background-radius: 8;">
+                            <Label text="Fat" style="-fx-text-fill: rgba(255, 255, 255, 0.7);" HBox.hgrow="ALWAYS" />
+                            <Label text="65g" style="-fx-font-weight: bold; -fx-text-fill: #84cc16; -fx-font-size: 14;" />
+                        </HBox>
+
+                        <HBox spacing="15" style="-fx-background-color: rgba(132, 204, 22, 0.1); -fx-border-left: 3px solid #84cc16; -fx-padding: 12; -fx-border-radius: 8; -fx-background-radius: 8;">
+                            <Label text="Calories" style="-fx-text-fill: rgba(255, 255, 255, 0.7);" HBox.hgrow="ALWAYS" />
+                            <Label text="2150 Cal" style="-fx-font-weight: bold; -fx-text-fill: #84cc16; -fx-font-size: 14;" />
+                        </HBox>
+                    </VBox>
+                </HBox>
+            </VBox>
+        </ScrollPane>
+    </center>
+</BorderPane>

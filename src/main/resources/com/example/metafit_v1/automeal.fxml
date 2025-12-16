@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="960.0" prefWidth="1860.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #0f172a 0%, #1e293b 50%, #0f172a 100%);" stylesheets="@image-button.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.metafit_v1.user_controllers.AutomealController">
+   <children>
+      <Pane layoutX="133.0" layoutY="20.0" prefHeight="80.0" prefWidth="1715.0" styleClass="glass-card" stylesheets="@glass_effect.css">
+         <children>
+            <ToggleButton fx:id="weightLossButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#weightLossEvent" prefHeight="50.0" prefWidth="350.0" selected="true" styleClass="glass-button" stylesheets="@glass_button.css" text="Weight Loss" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="categoryToggle" />
+               </toggleGroup>
+            </ToggleButton>
+            <ToggleButton fx:id="weightGainButton" layoutX="454.0" layoutY="14.0" mnemonicParsing="false" onAction="#weightGainEvent" prefHeight="50.0" prefWidth="350.0" styleClass="glass-button" stylesheets="@glass_button.css" text="Weight Gain" textFill="WHITE" toggleGroup="$categoryToggle">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="budgetButton" layoutX="898.0" layoutY="14.0" mnemonicParsing="false" onAction="#budgetEvent" prefHeight="50.0" prefWidth="350.0" styleClass="glass-button" stylesheets="@glass_button.css" text="Target Budget" textFill="WHITE" toggleGroup="$categoryToggle">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="proteinButton" layoutX="1338.0" layoutY="14.0" mnemonicParsing="false" onAction="#proteinEvent" prefHeight="50.0" prefWidth="350.0" styleClass="glass-button" stylesheets="@glass_button.css" text="Target Protein" textFill="WHITE" toggleGroup="$categoryToggle">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </ToggleButton>
+         </children>
+      </Pane>
+      <Pane prefHeight="960.0" prefWidth="120.0" styleClass="glass-accent" stylesheets="@glass_effect.css" />
+      <Pane layoutX="133.0" layoutY="297.0" prefHeight="650.0" prefWidth="1710.0" styleClass="glass-card" stylesheets="@glass_effect.css">
+         <children>
+            <Pane layoutX="21.0" layoutY="69.0" prefHeight="340.0" prefWidth="220.0" styleClass="glass-accent">
+               <children>
+                  <ListView fx:id="satFoodList" layoutX="10.0" layoutY="5.0" prefHeight="340.0" prefWidth="200.0" styleClass="list-cell1" stylesheets="@automealStyle.css" />
+                  <ListView fx:id="satWeightList" layoutX="140.0" layoutY="5.0" prefHeight="340.0" prefWidth="80.0" styleClass="list-cell1" stylesheets="@automealStyle.css" />
+               </children>
+            </Pane>
+            <Pane layoutX="21.0" layoutY="419.0" prefHeight="220.0" prefWidth="220.0" styleClass="glass-accent">
+               <children>
+                  <ListView fx:id="satMacroList" layoutX="10.0" layoutY="5.0" prefHeight="220.0" prefWidth="120.0" styleClass="list-cell2" stylesheets="@automealStyle.css" />
+                  <ListView fx:id="satMacroWeightList" layoutX="150.0" layoutY="5.0" prefHeight="220.0" prefWidth="90.0" styleClass="list-cell2" stylesheets="@automealStyle.css" />
+               </children>
+            </Pane>
+            <Pane layoutX="262.0" layoutY="69.0" prefHeight="340.0" prefWidth="220.0" styleClass="glass-accent">
+               <children>
+                  <ListView fx:id="sunFoodList" layoutX="10.0" layoutY="5.0" prefHeight="340.0" prefWidth="200.0" styleClass="list-cell1" stylesheets="@automealStyle.css" />
+                  <ListView fx:id="sunWeightList" layoutX="140.0" layoutY="5.0" prefHeight="340.0" prefWidth="80.0" styleClass="list-cell1" stylesheets="@automealStyle.css" />
+               </children>
+            </Pane>
+            <Pane layoutX="262.0" layoutY="419.0" prefHeight="220.0" prefWidth="220.0" styleClass="glass-accent">
+               <children>
+                  <ListView fx:id="sunMacroList" layoutX="10.0" layoutY="5.0" prefHeight="220.0" prefWidth="120.0" styleClass="list-cell2" stylesheets="@automealStyle.css" />
+                  <ListView fx:id="sunMacroWeightList" layoutX="140.0" layoutY="5.0" prefHeight="220.0" prefWidth="90.0" styleClass="list-cell2" stylesheets="@automealStyle.css" />
+               </children>
+            </Pane>
+            <Pane layoutX="21.0" layoutY="10.0" prefHeight="50.0" prefWidth="220.0" styleClass="glass-accent">
+               <children>
+                  <Label layoutX="57.0" layoutY="7.0" text="Saturday" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="262.0" layoutY="10.0" prefHeight="50.0" prefWidth="220.0" styleClass="glass-accent">
+               <children>
+                  <Label layoutX="67.0" layoutY="7.0" text="Sunday" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="501.0" layoutY="10.0" prefHeight="50.0" prefWidth="220.0" styleClass="glass-accent">
+               <children>
+                  <Label layoutX="62.0" layoutY="7.0" text="Monday" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="745.0" layoutY="10.0" prefHeight="50.0" prefWidth="220.0" styleClass="glass-accent">
+               <children>
+                  <Label layoutX="62.0" layoutY="7.0" text="Tuesday" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="983.0" layoutY="10.0" prefHeight="50.0" prefWidth="220.0" styleClass="glass-accent">
+               <children>
+                  <Label layoutX="41.0" layoutY="7.0" text="Wednesday" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="1223.0" layoutY="10.0" prefHeight="50.0" prefWidth="220.0" styleClass="glass-accent">
+               <children>
+                  <Label layoutX="55.0" layoutY="7.0" text="Thursday" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="1465.0" layoutY="10.0" prefHeight="50.0" prefWidth="220.0" styleClass="glass-accent">
+               <children>
+                  <Label layoutX="73.0" layoutY="7.0" text="Friday" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="501.0" layoutY="69.0" prefHeight="340.0" prefWidth="220.0" styleClass="glass-accent">
+               <children>
+                  <ListView fx:id="monFoodList" layoutX="10.0" layoutY="5.0" prefHeight="340.0" prefWidth="200.0" styleClass="list-cell1" stylesheets="@automealStyle.css" />
+                  <ListView fx:id="monWeightList" layoutX="140.0" layoutY="5.0" prefHeight="340.0" prefWidth="80.0" styleClass="list-cell1" stylesheets="@automealStyle.css" />
+               </children>
+            </Pane>
+            <Pane layoutX="501.0" layoutY="419.0" prefHeight="220.0" prefWidth="220.0" styleClass="glass-accent">
+               <children>
+                  <ListView fx:id="monMacroList" layoutX="10.0" layoutY="5.0" prefHeight="220.0" prefWidth="120.0" styleClass="list-cell2" stylesheets="@automealStyle.css" />
+                  <ListView fx:id="monMacroWeightList" layoutX="140.0" layoutY="5.0" prefHeight="220.0" prefWidth="90.0" styleClass="list-cell2" stylesheets="@automealStyle.css" />
+               </children>
+            </Pane>
+            <Pane layoutX="745.0" layoutY="69.0" prefHeight="340.0" prefWidth="220.0" styleClass="glass-accent">
+               <children>
+                  <ListView fx:id="tueFoodList" layoutX="10.0" layoutY="5.0" prefHeight="340.0" prefWidth="200.0" styleClass="list-cell1" stylesheets="@automealStyle.css" />
+                  <ListView fx:id="tueWeightList" layoutX="140.0" layoutY="5.0" prefHeight="340.0" prefWidth="80.0" styleClass="list-cell1" stylesheets="@automealStyle.css" />
+               </children>
+            </Pane>
+            <Pane layoutX="745.0" layoutY="419.0" prefHeight="220.0" prefWidth="220.0" styleClass="glass-accent">
+               <children>
+                  <ListView fx:id="tueMacroList" layoutX="10.0" layoutY="5.0" prefHeight="220.0" prefWidth="120.0" styleClass="list-cell2" stylesheets="@automealStyle.css" />
+                  <ListView fx:id="tueMacroWeightList" layoutX="140.0" layoutY="5.0" prefHeight="220.0" prefWidth="90.0" styleClass="list-cell2" stylesheets="@automealStyle.css" />
+               </children>
+            </Pane>
+            <Pane layoutX="983.0" layoutY="69.0" prefHeight="340.0" prefWidth="220.0" styleClass="glass-accent">
+               <children>
+                  <ListView fx:id="wedFoodList" layoutX="10.0" layoutY="5.0" prefHeight="340.0" prefWidth="200.0" styleClass="list-cell1" stylesheets="@automealStyle.css" />
+                  <ListView fx:id="wedWeightList" layoutX="140.0" layoutY="5.0" prefHeight="340.0" prefWidth="80.0" styleClass="list-cell1" stylesheets="@automealStyle.css" />
+               </children>
+            </Pane>
+            <Pane layoutX="983.0" layoutY="419.0" prefHeight="220.0" prefWidth="220.0" styleClass="glass-accent">
+               <children>
+                  <ListView fx:id="wedMacroList" layoutX="10.0" layoutY="5.0" prefHeight="220.0" prefWidth="120.0" styleClass="list-cell2" stylesheets="@automealStyle.css" />
+                  <ListView fx:id="wedMacroWeightList" layoutX="140.0" layoutY="5.0" prefHeight="220.0" prefWidth="90.0" styleClass="list-cell2" stylesheets="@automealStyle.css" />
+               </children>
+            </Pane>
+            <Pane layoutX="1223.0" layoutY="69.0" prefHeight="340.0" prefWidth="220.0" styleClass="glass-accent">
+               <children>
+                  <ListView fx:id="thuFoodList" layoutX="10.0" layoutY="5.0" prefHeight="340.0" prefWidth="200.0" styleClass="list-cell1" stylesheets="@automealStyle.css" />
+                  <ListView fx:id="thuWeightList" layoutX="140.0" layoutY="5.0" prefHeight="340.0" prefWidth="80.0" styleClass="list-cell1" stylesheets="@automealStyle.css" />
+               </children>
+            </Pane>
+            <Pane layoutX="1223.0" layoutY="419.0" prefHeight="220.0" prefWidth="220.0" styleClass="glass-accent">
+               <children>
+                  <ListView fx:id="thuMacroList" layoutX="10.0" layoutY="5.0" prefHeight="220.0" prefWidth="120.0" styleClass="list-cell2" stylesheets="@automealStyle.css" />
+                  <ListView fx:id="thuMacroWeightList" layoutX="140.0" layoutY="5.0" prefHeight="220.0" prefWidth="90.0" styleClass="list-cell2" stylesheets="@automealStyle.css" />
+               </children>
+            </Pane>
+            <Pane layoutX="1465.0" layoutY="69.0" prefHeight="340.0" prefWidth="220.0" styleClass="glass-accent">
+               <children>
+                  <ListView fx:id="friFoodList" layoutX="10.0" layoutY="5.0" prefHeight="340.0" prefWidth="200.0" styleClass="list-cell1" stylesheets="@automealStyle.css" />
+                  <ListView fx:id="friWeightList" layoutX="140.0" layoutY="5.0" prefHeight="340.0" prefWidth="80.0" styleClass="list-cell1" stylesheets="@automealStyle.css" />
+               </children>
+            </Pane>
+            <Pane layoutX="1465.0" layoutY="419.0" prefHeight="220.0" prefWidth="220.0" styleClass="glass-accent">
+               <children>
+                  <ListView fx:id="friMacroList" layoutX="10.0" layoutY="5.0" prefHeight="220.0" prefWidth="120.0" styleClass="list-cell2" stylesheets="@automealStyle.css" />
+                  <ListView fx:id="friMacroWeightList" layoutX="140.0" layoutY="5.0" prefHeight="220.0" prefWidth="90.0" styleClass="list-cell2" stylesheets="@automealStyle.css" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#87cc1800" height="80.0" layoutY="424.0" stroke="#85cc17" strokeType="INSIDE" strokeWidth="3.0" width="120.0">
+         <effect>
+            <Glow level="0.5" />
+         </effect>
+      </Rectangle>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true">
+         <clip>
+            <Circle centerX="50" centerY="50" radius="50" />
+         </clip>
+         <image>
+            <Image url="@icons/logo.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="38.0" layoutY="282.0" onMouseClicked="#gotoProfile" pickOnBounds="true" styleClass="image-button">
+         <image>
+            <Image url="@icons/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="37.0" layoutY="362.0" onMouseClicked="#gotoDashboard" pickOnBounds="true" styleClass="image-button">
+         <image>
+            <Image url="@icons/layout.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="38.0" layoutY="442.0" pickOnBounds="true" styleClass="image-button">
+         <image>
+            <Image url="@icons/Ai.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="38.0" layoutY="522.0" onMouseClicked="#gotoMealEntry" pickOnBounds="true" styleClass="image-button">
+         <image>
+            <Image url="@icons/brunch.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="37.0" layoutY="602.0" onMouseClicked="#gotoWorkout" pickOnBounds="true" styleClass="image-button">
+         <image>
+            <Image url="@icons/gym.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="38.0" layoutY="886.0" pickOnBounds="true">
+         <image>
+            <Image url="@icons/logout.png" />
+         </image>
+      </ImageView>
+      <StackPane fx:id="toggleButtonStackPane" layoutX="133.0" layoutY="112.0" prefHeight="170.0" prefWidth="805.0">
+         <children>
+            <AnchorPane fx:id="weightPane" prefHeight="200.0" prefWidth="200.0" styleClass="glass-card" stylesheets="@glass_effect.css">
+               <children>
+                  <Label layoutX="25.0" layoutY="36.0" text="Target Weight (Kgs) :" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="82.0" layoutY="100.0" text="Select Duration :" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="weightField" alignment="CENTER" layoutX="297.0" layoutY="31.0" prefHeight="45.0" prefWidth="195.0" styleClass="glass-textfield" stylesheets="@glass_textfield_choicebox.css" text="75 ">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </TextField>
+                  <ChoiceBox fx:id="durationBox" layoutX="297.0" layoutY="98.0" prefHeight="45.0" prefWidth="195.0" styleClass="glass-choicebox-small" stylesheets="@glass_textfield_choicebox.css" />
+                  <Button layoutX="570.0" layoutY="55.0" mnemonicParsing="false" onAction="#weightCreateMeal" prefHeight="60.0" prefWidth="200.0" styleClass="glass-button-primary" stylesheets="@glass_button.css" text="Create Meal" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="budgetPane" prefHeight="200.0" prefWidth="200.0" styleClass="glass-card" stylesheets="@glass_effect.css" visible="false">
+               <children>
+                  <Button layoutX="570.0" layoutY="55.0" mnemonicParsing="false" onAction="#budgetCreateMeal" prefHeight="60.0" prefWidth="200.0" styleClass="glass-button-primary" stylesheets="@glass_button.css" text="Create Meal" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="27.0" layoutY="67.0" text="Target Weekly Budget :" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="budgetField" alignment="CENTER" layoutX="318.0" layoutY="62.0" prefHeight="45.0" prefWidth="173.0" styleClass="glass-textfield" stylesheets="@glass_textfield_choicebox.css" text="2000">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="proteinPane" prefHeight="200.0" prefWidth="200.0" styleClass="glass-card" stylesheets="@glass_effect.css" visible="false">
+               <children>
+                  <Button layoutX="570.0" layoutY="55.0" mnemonicParsing="false" onAction="#proteinCreateMeal" prefHeight="60.0" prefWidth="200.0" styleClass="glass-button-primary" stylesheets="@glass_button.css" text="Create Meal" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="20.0" layoutY="67.0" text="Target Daily Protein (g):" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="proteinField" alignment="CENTER" layoutX="318.0" layoutY="63.0" prefHeight="45.0" prefWidth="173.0" styleClass="glass-textfield" stylesheets="@glass_textfield_choicebox.css" text="150">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

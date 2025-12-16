@@ -1,0 +1,5 @@
+.orange-scrollpane {
+    -fx-background: rgba(255, 165, 0, 0);
+    -fx-background-color: rgba(255, 165, 0, 0);
+    -fx-control-inner-background: rgba(255, 165, 0, 0);
+}

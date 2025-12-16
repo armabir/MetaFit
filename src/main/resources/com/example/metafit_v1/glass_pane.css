@@ -1,0 +1,350 @@
+/* Glass Morphism Effect CSS for JavaFX - Extended Color Variants */
+
+/* ========================================
+   BASE GLASS STYLES
+   ======================================== */
+
+/* Main Glass Card - Semi-transparent with border */
+.glass-card {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-border-color: rgba(255, 255, 255, 0.2);
+    -fx-border-width: 1;
+    -fx-border-radius: 16;
+    -fx-background-radius: 16;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 8, 0, 0, 8);
+}
+
+/* Hover effect for glass cards */
+.glass-card:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 12, 0, 0, 12);
+}
+
+/* Light Glass - Lighter transparency */
+.glass-light {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-border-color: rgba(255, 255, 255, 0.25);
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 6, 0, 0, 6);
+}
+
+/* Dark Glass - Darker transparency */
+.glass-dark {
+    -fx-background-color: rgba(0, 0, 0, 0.2);
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 8, 0, 0, 8);
+}
+
+/* Small Glass - For compact elements */
+.glass-small {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-border-color: rgba(255, 255, 255, 0.15);
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.15), 4, 0, 0, 4);
+}
+
+/* Large Glass - For big sections */
+.glass-large {
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+    -fx-border-color: rgba(255, 255, 255, 0.22);
+    -fx-border-width: 2;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.35), 10, 0, 0, 10);
+}
+
+/* Super Frosted Glass - Very subtle transparency */
+.glass-frosted {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-border-color: rgba(255, 255, 255, 0.12);
+    -fx-border-width: 1;
+    -fx-border-radius: 14;
+    -fx-background-radius: 14;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.25), 6, 0, 0, 6);
+}
+
+/* Thick Glass - More opaque */
+.glass-thick {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-border-color: rgba(255, 255, 255, 0.35);
+    -fx-border-width: 1;
+    -fx-border-radius: 16;
+    -fx-background-radius: 16;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 10, 0, 0, 10);
+}
+
+/* ========================================
+   COLOR VARIANTS - GREEN
+   ======================================== */
+
+/* Glass Lime Green */
+.glass-lime {
+    -fx-background-color: rgba(132, 204, 22, 0.12);
+    -fx-border-color: rgba(132, 204, 22, 0.35);
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 0.2), 6, 0, 0, 6);
+}
+
+.glass-lime:hover {
+    -fx-background-color: rgba(132, 204, 22, 0.18);
+    -fx-border-color: rgba(132, 204, 22, 0.5);
+    -fx-effect: dropshadow(three-pass-box, rgba(132, 204, 22, 0.3), 10, 0, 0, 8);
+}
+
+/* Glass Forest Green */
+.glass-forest {
+    -fx-background-color: rgba(34, 139, 34, 0.12);
+    -fx-border-color: rgba(34, 139, 34, 0.35);
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(34, 139, 34, 0.2), 6, 0, 0, 6);
+}
+
+.glass-forest:hover {
+    -fx-background-color: rgba(34, 139, 34, 0.18);
+    -fx-border-color: rgba(34, 139, 34, 0.5);
+    -fx-effect: dropshadow(three-pass-box, rgba(34, 139, 34, 0.3), 10, 0, 0, 8);
+}
+
+/* ========================================
+   COLOR VARIANTS - BLUE
+   ======================================== */
+
+/* Glass Sky Blue */
+.glass-sky {
+    -fx-background-color: rgba(79, 172, 254, 0.12);
+    -fx-border-color: rgba(79, 172, 254, 0.35);
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(79, 172, 254, 0.2), 6, 0, 0, 6);
+}
+
+.glass-sky:hover {
+    -fx-background-color: rgba(79, 172, 254, 0.18);
+    -fx-border-color: rgba(79, 172, 254, 0.5);
+    -fx-effect: dropshadow(three-pass-box, rgba(79, 172, 254, 0.3), 10, 0, 0, 8);
+}
+
+/* Glass Navy Blue */
+.glass-navy {
+    -fx-background-color: rgba(25, 84, 123, 0.12);
+    -fx-border-color: rgba(25, 84, 123, 0.35);
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(25, 84, 123, 0.2), 6, 0, 0, 6);
+}
+
+.glass-navy:hover {
+    -fx-background-color: rgba(25, 84, 123, 0.18);
+    -fx-border-color: rgba(25, 84, 123, 0.5);
+    -fx-effect: dropshadow(three-pass-box, rgba(25, 84, 123, 0.3), 10, 0, 0, 8);
+}
+
+/* Glass Cyan */
+.glass-cyan {
+    -fx-background-color: rgba(0, 242, 254, 0.12);
+    -fx-border-color: rgba(0, 242, 254, 0.35);
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 242, 254, 0.2), 6, 0, 0, 6);
+}
+
+.glass-cyan:hover {
+    -fx-background-color: rgba(0, 242, 254, 0.18);
+    -fx-border-color: rgba(0, 242, 254, 0.5);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 242, 254, 0.3), 10, 0, 0, 8);
+}
+
+/* ========================================
+   COLOR VARIANTS - RED & PINK
+   ======================================== */
+
+/* Glass Red */
+.glass-red {
+    -fx-background-color: rgba(255, 107, 107, 0.12);
+    -fx-border-color: rgba(255, 107, 107, 0.35);
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 107, 107, 0.2), 6, 0, 0, 6);
+}
+
+.glass-red:hover {
+    -fx-background-color: rgba(255, 107, 107, 0.18);
+    -fx-border-color: rgba(255, 107, 107, 0.5);
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 107, 107, 0.3), 10, 0, 0, 8);
+}
+
+/* Glass Pink */
+.glass-pink {
+    -fx-background-color: rgba(240, 147, 251, 0.12);
+    -fx-border-color: rgba(240, 147, 251, 0.35);
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(240, 147, 251, 0.2), 6, 0, 0, 6);
+}
+
+.glass-pink:hover {
+    -fx-background-color: rgba(240, 147, 251, 0.18);
+    -fx-border-color: rgba(240, 147, 251, 0.5);
+    -fx-effect: dropshadow(three-pass-box, rgba(240, 147, 251, 0.3), 10, 0, 0, 8);
+}
+
+/* ========================================
+   COLOR VARIANTS - PURPLE
+   ======================================== */
+
+/* Glass Purple */
+.glass-purple {
+    -fx-background-color: rgba(102, 126, 234, 0.12);
+    -fx-border-color: rgba(102, 126, 234, 0.35);
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(102, 126, 234, 0.2), 6, 0, 0, 6);
+}
+
+.glass-purple:hover {
+    -fx-background-color: rgba(102, 126, 234, 0.18);
+    -fx-border-color: rgba(102, 126, 234, 0.5);
+    -fx-effect: dropshadow(three-pass-box, rgba(102, 126, 234, 0.3), 10, 0, 0, 8);
+}
+
+/* Glass Violet */
+.glass-violet {
+    -fx-background-color: rgba(156, 39, 176, 0.12);
+    -fx-border-color: rgba(156, 39, 176, 0.35);
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(156, 39, 176, 0.2), 6, 0, 0, 6);
+}
+
+.glass-violet:hover {
+    -fx-background-color: rgba(156, 39, 176, 0.18);
+    -fx-border-color: rgba(156, 39, 176, 0.5);
+    -fx-effect: dropshadow(three-pass-box, rgba(156, 39, 176, 0.3), 10, 0, 0, 8);
+}
+
+/* ========================================
+   COLOR VARIANTS - ORANGE & YELLOW
+   ======================================== */
+
+/* Glass Orange */
+.glass-orange {
+    -fx-background-color: rgba(255, 152, 0, 0.12);
+    -fx-border-color: rgba(255, 152, 0, 0.35);
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 152, 0, 0.2), 6, 0, 0, 6);
+}
+
+.glass-orange:hover {
+    -fx-background-color: rgba(255, 152, 0, 0.18);
+    -fx-border-color: rgba(255, 152, 0, 0.5);
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 152, 0, 0.3), 10, 0, 0, 8);
+}
+
+/* Glass Yellow */
+.glass-yellow {
+    -fx-background-color: rgba(255, 216, 155, 0.12);
+    -fx-border-color: rgba(255, 216, 155, 0.35);
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 216, 155, 0.2), 6, 0, 0, 6);
+}
+
+.glass-yellow:hover {
+    -fx-background-color: rgba(255, 216, 155, 0.18);
+    -fx-border-color: rgba(255, 216, 155, 0.5);
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 216, 155, 0.3), 10, 0, 0, 8);
+}
+
+/* ========================================
+   COLOR VARIANTS - TEAL & INDIGO
+   ======================================== */
+
+/* Glass Teal */
+.glass-teal {
+    -fx-background-color: rgba(17, 153, 142, 0.12);
+    -fx-border-color: rgba(17, 153, 142, 0.35);
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(17, 153, 142, 0.2), 6, 0, 0, 6);
+}
+
+.glass-teal:hover {
+    -fx-background-color: rgba(17, 153, 142, 0.18);
+    -fx-border-color: rgba(17, 153, 142, 0.5);
+    -fx-effect: dropshadow(three-pass-box, rgba(17, 153, 142, 0.3), 10, 0, 0, 8);
+}
+
+/* Glass Indigo */
+.glass-indigo {
+    -fx-background-color: rgba(63, 81, 181, 0.12);
+    -fx-border-color: rgba(63, 81, 181, 0.35);
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(63, 81, 181, 0.2), 6, 0, 0, 6);
+}
+
+.glass-indigo:hover {
+    -fx-background-color: rgba(63, 81, 181, 0.18);
+    -fx-border-color: rgba(63, 81, 181, 0.5);
+    -fx-effect: dropshadow(three-pass-box, rgba(63, 81, 181, 0.3), 10, 0, 0, 8);
+}
+
+/* ========================================
+   COLOR VARIANTS - CORAL & ROSE
+   ======================================== */
+
+/* Glass Coral */
+.glass-coral {
+    -fx-background-color: rgba(255, 154, 86, 0.12);
+    -fx-border-color: rgba(255, 154, 86, 0.35);
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 154, 86, 0.2), 6, 0, 0, 6);
+}
+
+.glass-coral:hover {
+    -fx-background-color: rgba(255, 154, 86, 0.18);
+    -fx-border-color: rgba(255, 154, 86, 0.5);
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 154, 86, 0.3), 10, 0, 0, 8);
+}
+
+/* Glass Rose */
+.glass-rose {
+    -fx-background-color: rgba(245, 87, 108, 0.12);
+    -fx-border-color: rgba(245, 87, 108, 0.35);
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(245, 87, 108, 0.2), 6, 0, 0, 6);
+}
+
+.glass-rose:hover {
+    -fx-background-color: rgba(245, 87, 108, 0.18);
+    -fx-border-color: rgba(245, 87, 108, 0.5);
+    -fx-effect: dropshadow(three-pass-box, rgba(245, 87, 108, 0.3), 10, 0, 0, 8);
+}

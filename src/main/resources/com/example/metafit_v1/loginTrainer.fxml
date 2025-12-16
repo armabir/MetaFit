@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600" prefWidth="800" style="-fx-background-color: #f5f5f5;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.metafit_v1.trainer_controllers.LoginTrainerController">
+    <VBox prefHeight="600" prefWidth="800" spacing="20" style="-fx-alignment: center;">
+
+        <!-- Header -->
+        <Label text="MetaFit" style="-fx-font-size: 36; -fx-font-weight: bold; -fx-text-fill: #FF9800;">
+            <VBox.margin>
+                <Insets top="40" />
+            </VBox.margin>
+        </Label>
+
+        <Label text="Trainer Portal" style="-fx-font-size: 14; -fx-text-fill: #666;" />
+
+        <!-- Login Card -->
+        <VBox spacing="15" style="-fx-padding: 40; -fx-border-color: white; -fx-border-radius: 5; -fx-background-color: white; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);" prefWidth="350">
+
+            <Label text="Trainer Login" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #333;" />
+
+            <!-- Username/Email Field -->
+            <Label text="Username or Email:" style="-fx-font-size: 12; -fx-font-weight: bold;" />
+            <TextField fx:id="usernameEmailField" promptText="Enter username or email" style="-fx-font-size: 12; -fx-padding: 10;" />
+
+            <!-- Password Field -->
+            <Label text="Password:" style="-fx-font-size: 12; -fx-font-weight: bold;" />
+            <PasswordField fx:id="passwordField" promptText="Enter password" style="-fx-font-size: 12; -fx-padding: 10;" />
+
+            <!-- Error Label -->
+            <Label fx:id="errorLabel" style="-fx-text-fill: #d32f2f; -fx-font-size: 12; -fx-wrap-text: true;" />
+
+            <!-- Login Button -->
+            <Button fx:id="loginBtn" text="Login" style="-fx-font-size: 14; -fx-padding: 12; -fx-background-color: #FF9800; -fx-text-fill: white; -fx-border-radius: 5; -fx-cursor: hand;" onAction="#handleLogin" />
+
+            <!-- Signup Link -->
+            <VBox spacing="5" style="-fx-alignment: center;">
+                <Label text="Don't have a trainer account?" style="-fx-font-size: 12; -fx-text-fill: #666;" />
+                <Hyperlink text="Register as Trainer" style="-fx-font-size: 12; -fx-text-fill: #FF9800; -fx-padding: 0;" onAction="#handleSignUp" />
+            </VBox>
+
+            <!-- Back to User Login -->
+            <VBox spacing="5" style="-fx-alignment: center;">
+                <Label text="Are you a user?" style="-fx-font-size: 12; -fx-text-fill: #666;" />
+                <Hyperlink text="User Login" style="-fx-font-size: 12; -fx-text-fill: #2196F3; -fx-padding: 0;" onAction="#handleBackToUserLogin" />
+            </VBox>
+        </VBox>
+
+        <!-- Info Labels -->
+        <Label fx:id="infoLabel" style="-fx-text-fill: #4CAF50; -fx-font-size: 12;" />
+
+    </VBox>
+</AnchorPane>

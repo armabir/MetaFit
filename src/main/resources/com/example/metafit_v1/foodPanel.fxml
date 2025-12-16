@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.metafit_v1.other_controllers.FoodPanelController">
+   <children>
+      <Pane layoutX="10.0" layoutY="5.0" onMouseClicked="#addToList" prefHeight="40.0" prefWidth="280.0" styleClass="glass-dark" stylesheets="@glass_effect.css">
+         <children>
+            <Label fx:id="nameLabel" layoutX="14.0" layoutY="6.0" text="Chicken" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="242.0" layoutY="-9.0" text="+" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>

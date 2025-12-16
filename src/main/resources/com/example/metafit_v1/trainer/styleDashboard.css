@@ -1,0 +1,8 @@
+.boarder{
+    -fx-background-color: #84ca17;
+}
+.round-image {
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-overflow: hidden;
+}

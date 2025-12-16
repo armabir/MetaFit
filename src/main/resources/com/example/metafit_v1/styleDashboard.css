@@ -1,0 +1,25 @@
+.boarder{
+    -fx-background-color: #84ca17;
+}
+.round-image {
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-overflow: hidden;
+}
+.button1{
+    -fx-background-color: #2F3C33;
+}
+.list-view {
+    -fx-background-color: transparent;   /* Transparent background */
+    -fx-control-inner-background: transparent;
+    -fx-border-color: transparent;
+}
+
+.list-cell1 {
+    -fx-background-color: transparent;   /* Transparent background for each cell */
+    -fx-text-fill: #bc0000;                /* White text */
+    -fx-font-weight: bold;               /* Bold text */
+    -fx-font-size: 18px;
+    /*-fx-alignment: center; !* Font size 15 *!*/
+}
+

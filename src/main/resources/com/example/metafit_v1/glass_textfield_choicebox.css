@@ -1,0 +1,224 @@
+/* ============================================
+   GLASS EFFECT TEXTFIELD
+   ============================================ */
+
+/* Standard Glass TextField */
+.glass-textfield {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-border-color: rgba(255, 255, 255, 0.2);
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-font-size: 18;
+    -fx-padding: 10;
+    -fx-prompt-text-fill: rgb(255, 255, 255);
+}
+
+/* TextField on hover */
+.glass-textfield:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* TextField when focused */
+.glass-textfield:focused {
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+    -fx-border-color: rgba(132, 204, 22, 0.6);
+    -fx-border-width: 2;
+}
+
+/* Small Glass TextField */
+.glass-textfield-small {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-border-color: rgba(255, 255, 255, 0.15);
+    -fx-border-width: 1;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-text-fill: white;
+    -fx-font-size: 12;
+    -fx-padding: 8;
+    -fx-prompt-text-fill: rgba(255, 255, 255, 0.4);
+}
+
+.glass-textfield-small:focused {
+    -fx-border-color: rgba(132, 204, 22, 0.5);
+    -fx-border-width: 1.5;
+}
+
+/* Large Glass TextField */
+.glass-textfield-large {
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+    -fx-border-color: rgba(255, 255, 255, 0.25);
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-font-size: 16;
+    -fx-padding: 12;
+    -fx-prompt-text-fill: rgba(255, 255, 255, 0.5);
+}
+
+.glass-textfield-large:focused {
+    -fx-border-color: #84cc16;
+    -fx-border-width: 2;
+}
+
+/* Accent Glass TextField (with green tint) */
+.glass-textfield-accent {
+    -fx-background-color: rgba(132, 204, 22, 0.1);
+    -fx-border-color: rgba(132, 204, 22, 0.3);
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+    -fx-padding: 10;
+    -fx-prompt-text-fill: rgb(255, 255, 255);
+}
+
+.glass-textfield-accent:hover {
+    -fx-background-color: rgba(132, 204, 22, 0.15);
+    -fx-border-color: rgba(132, 204, 22, 0.5);
+}
+
+.glass-textfield-accent:focused {
+    -fx-background-color: rgba(132, 204, 22, 0.12);
+    -fx-border-color: #84cc16;
+    -fx-border-width: 2;
+}
+
+
+/* ============================================
+   GLASS EFFECT CHOICEBOX
+   ============================================ */
+
+/* Standard Glass ChoiceBox */
+.glass-choicebox {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-border-color: rgba(255, 255, 255, 0.2);
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+    -fx-padding: 10;
+    -fx-prompt-text-fill: rgb(255, 255, 255);
+}
+
+/* ChoiceBox on hover */
+.glass-choicebox:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* ChoiceBox when focused */
+.glass-choicebox:focused {
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+    -fx-border-color: rgba(132, 204, 22, 0.6);
+    -fx-border-width: 2;
+}
+
+/* ChoiceBox dropdown arrow button */
+.glass-choicebox .arrow-button {
+    -fx-background-color: rgba(132, 204, 22, 0.2);
+    -fx-border-color: rgba(132, 204, 22, 0.3);
+    -fx-border-width: 0;
+    -fx-padding: 5;
+}
+
+.glass-choicebox .arrow-button:hover {
+    -fx-background-color: rgba(132, 204, 22, 0.4);
+}
+
+.glass-choicebox .arrow-button:pressed {
+    -fx-background-color: rgba(132, 204, 22, 0.6);
+}
+
+/* ChoiceBox dropdown menu */
+.glass-choicebox .context-menu {
+    -fx-background-color: rgba(15, 23, 42, 0.95);
+    -fx-border-color: rgba(255, 255, 255, 0.2);
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+/* ChoiceBox menu items */
+.glass-choicebox .context-menu .menu-item {
+    -fx-text-fill: white;
+    -fx-padding: 8;
+    -fx-font-size: 12;
+}
+
+.glass-choicebox .context-menu .menu-item:hover {
+    -fx-background-color: rgba(132, 204, 22, 0.3);
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: rgb(255, 255, 255);
+}
+
+.glass-choicebox .context-menu .menu-item:focused {
+    -fx-background-color: rgba(132, 204, 22, 0.5);
+}
+
+/* Small Glass ChoiceBox */
+.glass-choicebox-small {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-border-color: rgba(255, 255, 255, 0.15);
+    -fx-border-width: 1;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-text-fill: white;
+    -fx-font-size: 12;
+    -fx-padding: 8;
+    -fx-prompt-text-fill: rgb(255, 255, 255);
+}
+
+.glass-choicebox-small:focused {
+    -fx-border-color: rgba(132, 204, 22, 0.5);
+    -fx-border-width: 1.5;
+}
+
+/* Large Glass ChoiceBox */
+.glass-choicebox-large {
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+    -fx-border-color: rgba(255, 255, 255, 0.25);
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-font-size: 16;
+    -fx-padding: 12;
+}
+
+.glass-choicebox-large:focused {
+    -fx-border-color: #84cc16;
+}
+
+/* Accent Glass ChoiceBox (with green tint) */
+.glass-choicebox-accent {
+    -fx-background-color: rgba(132, 204, 22, 0.1);
+    -fx-border-color: rgba(132, 204, 22, 0.3);
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+    -fx-padding: 10;
+}
+
+.glass-choicebox-accent:hover {
+    -fx-background-color: rgba(132, 204, 22, 0.15);
+    -fx-border-color: rgba(132, 204, 22, 0.5);
+}
+
+.glass-choicebox-accent:focused {
+    -fx-background-color: rgba(132, 204, 22, 0.12);
+    -fx-border-color: #84cc16;
+    -fx-border-width: 2;
+}
+
+.glass-choicebox-accent .context-menu {
+    -fx-background-color: rgba(15, 23, 42, 0.95);
+    -fx-border-color: rgba(132, 204, 22, 0.3);
+}

@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="960.0" prefWidth="1860.0" style="-fx-background-color: ECECEC;" stylesheets="@trainer/styleDashboard.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.metafit_v1.trainer_controllers.DashboardTrainerController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#85cc17" height="960.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="boarder" width="120.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#2f3c33" height="300.0" layoutX="467.0" layoutY="88.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="367.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#465149" height="300.0" layoutX="134.0" layoutY="88.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="350.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="540.0" layoutX="134.0" layoutY="404.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="700.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="270.0" layoutX="849.0" layoutY="670.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1000.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="300.0" layoutX="850.0" layoutY="357.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+      <Label fx:id="welcomeLabel" layoutX="149.0" layoutY="12.0" text="Welcome back, Abir!">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="149.0" layoutY="50.0" text="Ready to track your fitness with swag?">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="330.0" layoutX="849.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1000.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#465149" height="80.0" layoutX="850.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1000.0" />
+      <Button layoutX="871.0" layoutY="38.0" mnemonicParsing="false" prefWidth="120.0" style="-fx-background-color: #85cc17;" text="Saturday" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="1013.0" layoutY="38.0" mnemonicParsing="false" prefWidth="120.0" style="-fx-background-color: #85cc17;" text="Sunday" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="1296.0" layoutY="38.0" mnemonicParsing="false" prefWidth="120.0" style="-fx-background-color: #85cc17;" text="Tuesday" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="1155.0" layoutY="38.0" mnemonicParsing="false" prefWidth="120.0" style="-fx-background-color: #85cc17;" text="Monday" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="1438.0" layoutY="38.0" mnemonicParsing="false" prefWidth="120.0" style="-fx-background-color: #85cc17;" text="Wednesday" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="1582.0" layoutY="38.0" mnemonicParsing="false" prefWidth="120.0" style="-fx-background-color: #85cc17;" text="Thursday" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="1727.0" layoutY="38.0" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #85cc17;" text="Friday" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#465149" height="210.0" layoutX="869.0" layoutY="115.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="140.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#465149" height="210.0" layoutX="1036.0" layoutY="115.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="140.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#465149" height="210.0" layoutX="1200.0" layoutY="115.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="140.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#465149" height="210.0" layoutX="1363.0" layoutY="115.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="140.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#465149" height="210.0" layoutX="1527.0" layoutY="115.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="140.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#465149" height="210.0" layoutX="1693.0" layoutY="115.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="140.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#85cc17" height="88.0" layoutX="869.0" layoutY="237.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="140.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#85cc17" height="110.0" layoutX="1036.0" layoutY="215.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="140.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#85cc17" height="45.0" layoutX="1200.0" layoutY="280.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="140.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#85cc17" height="146.0" layoutX="1363.0" layoutY="179.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="140.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#85cc17" height="71.0" layoutX="1527.0" layoutY="254.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="140.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#85cc17" height="110.0" layoutX="1693.0" layoutY="215.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="140.0" />
+      <Label layoutX="913.0" layoutY="123.0" text="Protein" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="1086.0" layoutY="123.0" text="Carbs" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="1259.0" layoutY="123.0" text="Fat" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="1415.0" layoutY="123.0" text="Fiber" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="1576.0" layoutY="123.0" text="Sugar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="1742.0" layoutY="123.0" text="Water" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="proteinAmountLabel" layoutX="906.0" layoutY="291.0" text="80 of 120" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="carbsAmountLabel" layoutX="1073.0" layoutY="291.0" text="80 of 120" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="fatAmountLabel" layoutX="1241.0" layoutY="291.0" text="80 of 120" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="fiberAmountLabel" layoutX="1400.0" layoutY="291.0" text="80 of 120" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="sugarAmountLabel" layoutX="1564.0" layoutY="291.0" text="80 of 120" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="waterAmountLabel" layoutX="1730.0" layoutY="291.0" text="80 of 120" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <LineChart layoutX="860.0" layoutY="369.0" prefHeight="280.0" prefWidth="580.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="300.0" layoutX="1465.0" layoutY="357.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="380.0" />
+      <Circle fill="#465149" layoutX="1554.0" layoutY="492.0" radius="70.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="WHITE" layoutX="1554.0" layoutY="492.0" radius="60.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label layoutX="1654.0" layoutY="434.0" text="Protein">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="proteinWeightLabel" layoutX="1749.0" layoutY="434.0" text="150g">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1655.0" layoutY="476.0" text="Carbs">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="carbsWeightLabel" layoutX="1750.0" layoutY="476.0" text="150g">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1657.0" layoutY="522.0" text="Fat">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="fatWeightLabel" layoutX="1752.0" layoutY="522.0" text="150g">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1543.0" layoutY="364.0" text="Nutrition Summary">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="caloriLabel" layoutX="1530.0" layoutY="579.0" text="1800">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalCaloriLabel" layoutX="1524.0" layoutY="601.0" text="of 2300">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="caloriParcentLabel" layoutX="1534.0" layoutY="477.0" text="60%">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#465149" height="240.0" layoutX="864.0" layoutY="686.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="220.0" />
+      <Label fx:id="mealNameLabel" layoutX="930.0" layoutY="695.0" text="Breakfast" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="mealCaloriLabel" layoutX="946.0" layoutY="718.0" text="420 cal" textFill="#85cc17">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="881.0" layoutY="749.0" text="Chicken" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1041.0" layoutY="749.0" text="80g" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#465149" height="240.0" layoutX="1115.0" layoutY="687.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="220.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#465149" height="240.0" layoutX="1367.0" layoutY="687.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="220.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#465149" height="240.0" layoutX="1617.0" layoutY="685.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="220.0" />
+      <Label layoutX="880.0" layoutY="775.0" text="Chicken" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1040.0" layoutY="775.0" text="80g" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="880.0" layoutY="802.0" text="Chicken" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1040.0" layoutY="802.0" text="80g" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="880.0" layoutY="829.0" text="Chicken" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1040.0" layoutY="829.0" text="80g" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="880.0" layoutY="856.0" text="Chicken" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1040.0" layoutY="856.0" text="80g" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="880.0" layoutY="882.0" text="Chicken" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1040.0" layoutY="882.0" text="80g" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="149.0" layoutY="112.0" pickOnBounds="true">
+         <clip>
+            <Circle centerX="50" centerY="50" radius="50" />
+         </clip>
+         <image>
+            <Image url="@images/DP.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameLabel" layoutX="265.0" layoutY="115.0" text="ARM Abir" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="userNameLabel" layoutX="265.0" layoutY="150.0" text="\@armabir" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="targetLabel" layoutX="505.0" layoutY="127.0" text="Weight Loss" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="505.0" layoutY="101.0" text="Target:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="636.0" layoutY="217.0" pickOnBounds="true">
+         <image>
+            <Image url="@icons/height.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="533.0" layoutY="218.0" pickOnBounds="true">
+         <image>
+            <Image url="@icons/scales.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="533.0" layoutY="319.0" pickOnBounds="true">
+         <image>
+            <Image url="@icons/bmi.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="weightLabel" layoutX="520.0" layoutY="182.0" text="80 Kgs" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="heightLabel" layoutX="638.0" layoutY="183.0" text="5' 9&quot;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="tdeeLabel" layoutX="515.0" layoutY="283.0" text="2300 Cal" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="80.0" layoutY="345.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="120.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7838477492332458" green="1.0" blue="0.4104938209056854" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5215686559677124" green="0.800000011920929" blue="0.09019608050584793" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#gotoUser" pickOnBounds="true">
+         <clip>
+            <Circle centerX="50" centerY="50" radius="50" />
+         </clip>
+         <image>
+            <Image url="@icons/logo.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="38.0" layoutY="282.0" onMouseClicked="#gotoProfile" pickOnBounds="true">
+         <image>
+            <Image url="@icons/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="37.0" layoutY="362.0" pickOnBounds="true">
+         <image>
+            <Image url="@icons/layout.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="38.0" layoutY="886.0" pickOnBounds="true">
+         <image>
+            <Image url="@icons/logout.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="userNameLabel1" layoutX="265.0" layoutY="173.0" text="armabir1@gmail.com" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="targetLabel1" layoutX="674.0" layoutY="127.0" text="Gym &amp; Run" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="674.0" layoutY="101.0" text="Activity:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="748.0" layoutY="217.0" pickOnBounds="true">
+         <image>
+            <Image url="@icons/age.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="heightLabel1" layoutX="761.0" layoutY="183.0" text="23" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="169.0" layoutY="243.0" mnemonicParsing="false" onAction="#gotoMealTrainer" prefHeight="50.0" prefWidth="280.0" style="-fx-background-color: #85cc17;" text="Create Meal Routine" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="169.0" layoutY="310.0" mnemonicParsing="false" onAction="#gotoExerciseTrainer" prefHeight="50.0" prefWidth="280.0" style="-fx-background-color: #85cc17;" text="Create Exercise Routine" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <TextField layoutX="150.0" layoutY="421.0" prefHeight="40.0" prefWidth="665.0" stylesheets="@styleDashboard.css" text="Search client by name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#2f3c33" height="71.0" layoutX="151.0" layoutY="478.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="665.0" />
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="169.0" layoutY="489.0" pickOnBounds="true">
+         <clip>
+            <Circle centerX="25" centerY="25" radius="25" />
+         </clip>
+         <image>
+            <Image url="@images/DP.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameLabel1" layoutX="240.0" layoutY="491.0" text="ARM Abir" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="targetLabel2" layoutX="625.0" layoutY="512.0" text="Weight Loss" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="651.0" layoutY="486.0" text="Target:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="targetLabel21" layoutX="506.0" layoutY="514.0" text="80 Kgs" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="506.0" layoutY="488.0" text="Weight " textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel11" layoutX="472.0" layoutY="489.0" text="|" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel111" layoutX="598.0" layoutY="491.0" text="|" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#465149" height="71.0" layoutX="153.0" layoutY="560.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="665.0" />
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="171.0" layoutY="571.0" pickOnBounds="true">
+         <clip>
+            <Circle centerX="25" centerY="25" radius="25" />
+         </clip>
+         <image>
+            <Image url="@images/DP.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameLabel12" layoutX="242.0" layoutY="573.0" text="ARM Abir" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="targetLabel22" layoutX="627.0" layoutY="594.0" text="Weight Loss" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="653.0" layoutY="568.0" text="Target:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="targetLabel211" layoutX="508.0" layoutY="596.0" text="80 Kgs" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="508.0" layoutY="570.0" text="Weight " textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel112" layoutX="474.0" layoutY="571.0" text="|" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel1111" layoutX="600.0" layoutY="573.0" text="|" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#465149" height="71.0" layoutX="153.0" layoutY="643.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="665.0" />
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="171.0" layoutY="654.0" pickOnBounds="true">
+         <clip>
+            <Circle centerX="25" centerY="25" radius="25" />
+         </clip>
+         <image>
+            <Image url="@images/DP.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameLabel121" layoutX="242.0" layoutY="656.0" text="ARM Abir" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="targetLabel221" layoutX="627.0" layoutY="677.0" text="Weight Loss" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="653.0" layoutY="651.0" text="Target:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="targetLabel2111" layoutX="508.0" layoutY="679.0" text="80 Kgs" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="508.0" layoutY="653.0" text="Weight " textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel1121" layoutX="474.0" layoutY="654.0" text="|" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel11111" layoutX="600.0" layoutY="656.0" text="|" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel111111" layoutX="771.0" layoutY="648.0" text="+" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
